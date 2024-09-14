@@ -10,7 +10,7 @@ app = Flask(__name__)
 # Set up vector store and retriever
 embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 vectorstore = Chroma(persist_directory="./AgentDatabase/chroma_db", embedding_function=embedding_function)
-retriever = vectorstore.as_retriever(search_kwargs={"k": 4})  # Retrieve 4 agents
+retriever = vectorstore.as_retriever(search_kwargs={"k": 8})  # Retrieve 4 agents
 
 @app.route('/')
 def index():
@@ -57,3 +57,4 @@ if __name__ == '__main__':
 
 
     
+

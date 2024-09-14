@@ -598,5 +598,855 @@
     "bid_unit": "per hectare",
     "reduction_strategy": "fixed",
     "min_bid": 45
+  },
+  {
+    "id": "061",
+    "name": "EcoFriendly Home Organizing",
+    "categories": ["Home Services", "Waste Reduction"],
+    "specialization": "Provides home organization services using sustainable methods, focusing on reducing waste and repurposing items.",
+    "initial_bid_range": [50, 150],
+    "bid_unit": "per session",
+    "reduction_strategy": "percentage",
+    "min_bid": 45
+  },
+  {
+    "id": "062",
+    "name": "Sustainable Gift Wrapping",
+    "categories": ["Gift Services", "Waste Reduction"],
+    "specialization": "Offers gift wrapping services using reusable or biodegradable materials and techniques.",
+    "initial_bid_range": [5, 20],
+    "bid_unit": "per gift",
+    "reduction_strategy": "fixed",
+    "min_bid": 4
+  },
+  {
+    "id": "063",
+    "name": "Green Screen Repair",
+    "categories": ["Electronics Repair", "Waste Reduction"],
+    "specialization": "Repairs smartphone and tablet screens using eco-friendly methods and materials.",
+    "initial_bid_range": [30, 100],
+    "bid_unit": "per repair",
+    "reduction_strategy": "percentage",
+    "min_bid": 25
+  },
+  {
+    "id": "064",
+    "name": "Eco-Friendly Car Detailing",
+    "categories": ["Automotive Services", "Water Conservation"],
+    "specialization": "Provides car detailing services using waterless cleaning methods and biodegradable products.",
+    "initial_bid_range": [50, 150],
+    "bid_unit": "per service",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "065",
+    "name": "Sustainable Home Staging",
+    "categories": ["Real Estate Services", "Sustainable Design"],
+    "specialization": "Offers home staging services using eco-friendly, rented, or upcycled furniture and decor.",
+    "initial_bid_range": [200, 1000],
+    "bid_unit": "per project",
+    "reduction_strategy": "percentage",
+    "min_bid": 180
+  },
+  {
+    "id": "066",
+    "name": "Green Bicycle Repair",
+    "categories": ["Transportation", "Repair Services"],
+    "specialization": "Provides bicycle repair and maintenance services using eco-friendly lubricants and sustainable practices.",
+    "initial_bid_range": [30, 100],
+    "bid_unit": "per service",
+    "reduction_strategy": "fixed",
+    "min_bid": 25
+  },
+  {
+    "id": "067",
+    "name": "Eco-Friendly Pet Sitting",
+    "categories": ["Pet Care", "Sustainable Services"],
+    "specialization": "Offers pet sitting services with a focus on using sustainable products and practices.",
+    "initial_bid_range": [20, 50],
+    "bid_unit": "per day",
+    "reduction_strategy": "percentage",
+    "min_bid": 18
+  },
+  {
+    "id": "068",
+    "name": "Sustainable Meal Planning",
+    "categories": ["Nutrition", "Sustainable Food"],
+    "specialization": "Provides personalized meal planning services focusing on local, seasonal, and low-carbon footprint ingredients.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per month",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "069",
+    "name": "Green Home Inspection",
+    "categories": ["Real Estate Services", "Energy Efficiency"],
+    "specialization": "Conducts home inspections with a focus on energy efficiency, water conservation, and sustainable features.",
+    "initial_bid_range": [150, 400],
+    "bid_unit": "per inspection",
+    "reduction_strategy": "percentage",
+    "min_bid": 135
+  },
+  {
+    "id": "070",
+    "name": "Eco-Friendly Appliance Repair",
+    "categories": ["Home Services", "Waste Reduction"],
+    "specialization": "Repairs home appliances to extend their lifespan, reducing electronic waste.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per repair",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "071",
+    "name": "Sustainable Holiday Decorating",
+    "categories": ["Seasonal Services", "Eco-friendly Design"],
+    "specialization": "Offers holiday decorating services using sustainable, reusable, or biodegradable materials.",
+    "initial_bid_range": [100, 500],
+    "bid_unit": "per project",
+    "reduction_strategy": "percentage",
+    "min_bid": 90
+  },
+  {
+    "id": "072",
+    "name": "Green Tech Support",
+    "categories": ["IT Services", "Energy Efficiency"],
+    "specialization": "Provides tech support services with a focus on optimizing devices for energy efficiency.",
+    "initial_bid_range": [30, 100],
+    "bid_unit": "per hour",
+    "reduction_strategy": "fixed",
+    "min_bid": 25
+  },
+  {
+    "id": "073",
+    "name": "Eco-Friendly Window Cleaning",
+    "categories": ["Home Services", "Water Conservation"],
+    "specialization": "Offers window cleaning services using purified water systems and biodegradable cleaning solutions.",
+    "initial_bid_range": [5, 15],
+    "bid_unit": "per window",
+    "reduction_strategy": "percentage",
+    "min_bid": 4
+  },
+  {
+    "id": "074",
+    "name": "Sustainable Wardrobe Consulting",
+    "categories": ["Fashion", "Sustainable Lifestyle"],
+    "specialization": "Provides wardrobe consulting services focused on sustainable fashion choices and minimizing clothing waste.",
+    "initial_bid_range": [100, 300],
+    "bid_unit": "per session",
+    "reduction_strategy": "fixed",
+    "min_bid": 90
+  },
+  {
+    "id": "075",
+    "name": "Green Home Security",
+    "categories": ["Home Services", "Energy Efficiency"],
+    "specialization": "Installs and maintains eco-friendly home security systems powered by renewable energy.",
+    "initial_bid_range": [200, 1000],
+    "bid_unit": "per system",
+    "reduction_strategy": "percentage",
+    "min_bid": 180
+  },
+  {
+    "id": "076",
+    "name": "Eco-Friendly Hobby Kits",
+    "categories": ["Entertainment", "Sustainable Products"],
+    "specialization": "Curates and delivers sustainable hobby kits using eco-friendly materials and packaging.",
+    "initial_bid_range": [30, 100],
+    "bid_unit": "per kit",
+    "reduction_strategy": "fixed",
+    "min_bid": 25
+  },
+  {
+    "id": "077",
+    "name": "Sustainable Vacation Planning",
+    "categories": ["Travel Services", "Eco-Tourism"],
+    "specialization": "Plans vacations with a focus on eco-friendly accommodations, activities, and transportation.",
+    "initial_bid_range": [100, 500],
+    "bid_unit": "per trip",
+    "reduction_strategy": "percentage",
+    "min_bid": 90
+  },
+  {
+    "id": "078",
+    "name": "Green Snow Removal",
+    "categories": ["Seasonal Services", "Eco-friendly Practices"],
+    "specialization": "Provides snow removal services using electric equipment and eco-friendly de-icing products.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per service",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "079",
+    "name": "Eco-Friendly Coworking Spaces",
+    "categories": ["Office Services", "Sustainable Workplace"],
+    "specialization": "Offers coworking spaces designed with sustainable materials and powered by renewable energy.",
+    "initial_bid_range": [150, 500],
+    "bid_unit": "per month",
+    "reduction_strategy": "percentage",
+    "min_bid": 135
+  },
+  {
+    "id": "080",
+    "name": "Sustainable Skincare Consultation",
+    "categories": ["Beauty Services", "Natural Products"],
+    "specialization": "Provides skincare consultations focusing on natural, organic, and sustainably produced products.",
+    "initial_bid_range": [50, 150],
+    "bid_unit": "per session",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "081",
+    "name": "Eco-Friendly Furniture Rental",
+    "categories": ["Home Furnishing", "Sharing Economy"],
+    "specialization": "Offers furniture rental services using sustainably sourced and upcycled pieces.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per item per month",
+    "reduction_strategy": "percentage",
+    "min_bid": 45
+  },
+  {
+    "id": "082",
+    "name": "Green Roof Inspection",
+    "categories": ["Home Maintenance", "Sustainable Architecture"],
+    "specialization": "Provides inspection and maintenance services for residential and commercial green roofs.",
+    "initial_bid_range": [100, 300],
+    "bid_unit": "per inspection",
+    "reduction_strategy": "fixed",
+    "min_bid": 90
+  },
+  {
+    "id": "083",
+    "name": "Sustainable Baking Classes",
+    "categories": ["Education", "Sustainable Food"],
+    "specialization": "Offers baking classes using locally sourced, organic ingredients and energy-efficient techniques.",
+    "initial_bid_range": [30, 80],
+    "bid_unit": "per class",
+    "reduction_strategy": "percentage",
+    "min_bid": 25
+  },
+  {
+    "id": "084",
+    "name": "Eco-Friendly Car Sharing",
+    "categories": ["Transportation", "Sharing Economy"],
+    "specialization": "Operates a car-sharing service exclusively using electric and hybrid vehicles.",
+    "initial_bid_range": [5, 15],
+    "bid_unit": "per hour",
+    "reduction_strategy": "fixed",
+    "min_bid": 4
+  },
+  {
+    "id": "085",
+    "name": "Green Home Staging",
+    "categories": ["Real Estate", "Sustainable Design"],
+    "specialization": "Provides home staging services using eco-friendly, recyclable, and energy-efficient props and furniture.",
+    "initial_bid_range": [200, 1000],
+    "bid_unit": "per project",
+    "reduction_strategy": "percentage",
+    "min_bid": 180
+  },
+  {
+    "id": "086",
+    "name": "Sustainable Jewelry Repair",
+    "categories": ["Jewelry", "Repair Services"],
+    "specialization": "Offers jewelry repair and restoration services using ethical and recycled materials.",
+    "initial_bid_range": [30, 100],
+    "bid_unit": "per item",
+    "reduction_strategy": "fixed",
+    "min_bid": 25
+  },
+  {
+    "id": "087",
+    "name": "Eco-Friendly Pest Prevention",
+    "categories": ["Home Services", "Natural Solutions"],
+    "specialization": "Provides preventative pest control services using natural, non-toxic methods and materials.",
+    "initial_bid_range": [50, 150],
+    "bid_unit": "per treatment",
+    "reduction_strategy": "percentage",
+    "min_bid": 45
+  },
+  {
+    "id": "088",
+    "name": "Green Roof Garden Maintenance",
+    "categories": ["Urban Agriculture", "Landscaping"],
+    "specialization": "Offers maintenance and care services for rooftop gardens and green spaces.",
+    "initial_bid_range": [100, 300],
+    "bid_unit": "per month",
+    "reduction_strategy": "fixed",
+    "min_bid": 90
+  },
+  {
+    "id": "089",
+    "name": "Sustainable Home Brewing Kits",
+    "categories": ["Food and Beverage", "DIY"],
+    "specialization": "Provides home brewing kits with organic ingredients and reusable equipment.",
+    "initial_bid_range": [50, 150],
+    "bid_unit": "per kit",
+    "reduction_strategy": "percentage",
+    "min_bid": 45
+  },
+  {
+    "id": "090",
+    "name": "Eco-Friendly Carpet Rental",
+    "categories": ["Event Services", "Sustainable Products"],
+    "specialization": "Rents out carpets made from recycled materials for events and temporary installations.",
+    "initial_bid_range": [2, 5],
+    "bid_unit": "per square meter per day",
+    "reduction_strategy": "fixed",
+    "min_bid": 1.8
+  },
+  {
+    "id": "091",
+    "name": "Green Balcony Design",
+    "categories": ["Urban Gardening", "Home Improvement"],
+    "specialization": "Designs and installs sustainable, plant-based balcony spaces for urban dwellers.",
+    "initial_bid_range": [200, 1000],
+    "bid_unit": "per project",
+    "reduction_strategy": "percentage",
+    "min_bid": 180
+  },
+  {
+    "id": "092",
+    "name": "Eco-Friendly Appliance Rental",
+    "categories": ["Home Appliances", "Sharing Economy"],
+    "specialization": "Offers short-term rentals of energy-efficient home appliances.",
+    "initial_bid_range": [20, 100],
+    "bid_unit": "per appliance per week",
+    "reduction_strategy": "fixed",
+    "min_bid": 18
+  },
+  {
+    "id": "093",
+    "name": "Sustainable Gift Registry",
+    "categories": ["Gift Services", "Eco-friendly Products"],
+    "specialization": "Manages gift registries focused on sustainable, ethical, and locally produced items.",
+    "initial_bid_range": [5, 15],
+    "bid_unit": "per gift in registry",
+    "reduction_strategy": "percentage",
+    "min_bid": 4
+  },
+  {
+    "id": "094",
+    "name": "Green Personal Styling",
+    "categories": ["Fashion", "Personal Services"],
+    "specialization": "Provides personal styling services focused on sustainable and ethical fashion choices.",
+    "initial_bid_range": [100, 300],
+    "bid_unit": "per session",
+    "reduction_strategy": "fixed",
+    "min_bid": 90
+  },
+  {
+    "id": "095",
+    "name": "Eco-Friendly Ink Refill Service",
+    "categories": ["Office Supplies", "Waste Reduction"],
+    "specialization": "Offers printer ink cartridge refilling services to reduce plastic waste.",
+    "initial_bid_range": [10, 30],
+    "bid_unit": "per cartridge",
+    "reduction_strategy": "percentage",
+    "min_bid": 9
+  },
+  {
+    "id": "096",
+    "name": "Sustainable Vacation Home Management",
+    "categories": ["Property Management", "Sustainable Tourism"],
+    "specialization": "Manages vacation rentals with a focus on energy efficiency and sustainable practices.",
+    "initial_bid_range": [100, 500],
+    "bid_unit": "per property per month",
+    "reduction_strategy": "fixed",
+    "min_bid": 90
+  },
+  {
+    "id": "097",
+    "name": "Green Moving Services",
+    "categories": ["Relocation Services", "Waste Reduction"],
+    "specialization": "Provides moving services using reusable packing materials and fuel-efficient vehicles.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per hour",
+    "reduction_strategy": "percentage",
+    "min_bid": 45
+  },
+  {
+    "id": "098",
+    "name": "Eco-Friendly Costume Rental",
+    "categories": ["Entertainment", "Sharing Economy"],
+    "specialization": "Rents out costumes made from sustainable materials for parties and events.",
+    "initial_bid_range": [20, 100],
+    "bid_unit": "per costume per day",
+    "reduction_strategy": "fixed",
+    "min_bid": 18
+  },
+  {
+    "id": "099",
+    "name": "Sustainable Home Cinema Installation",
+    "categories": ["Home Entertainment", "Energy Efficiency"],
+    "specialization": "Installs home cinema systems with a focus on energy efficiency and sustainable materials.",
+    "initial_bid_range": [500, 2000],
+    "bid_unit": "per installation",
+    "reduction_strategy": "percentage",
+    "min_bid": 450
+  },
+  {
+    "id": "100",
+    "name": "Green Roof Ice Dam Prevention",
+    "categories": ["Home Maintenance", "Energy Efficiency"],
+    "specialization": "Installs and maintains eco-friendly ice dam prevention systems for roofs.",
+    "initial_bid_range": [200, 1000],
+    "bid_unit": "per service",
+    "reduction_strategy": "fixed",
+    "min_bid": 180
+  },
+  {
+    "id": "101",
+    "name": "Eco-Friendly Virtual Reality Experiences",
+    "categories": ["Entertainment", "Technology"],
+    "specialization": "Offers virtual reality experiences focused on environmental education and awareness.",
+    "initial_bid_range": [20, 50],
+    "bid_unit": "per hour",
+    "reduction_strategy": "percentage",
+    "min_bid": 18
+  },
+  {
+    "id": "102",
+    "name": "Sustainable Pet Toy Subscription",
+    "categories": ["Pet Care", "Subscription Services"],
+    "specialization": "Delivers monthly boxes of eco-friendly, durable pet toys made from sustainable materials.",
+    "initial_bid_range": [25, 50],
+    "bid_unit": "per month",
+    "reduction_strategy": "fixed",
+    "min_bid": 22
+  },
+  {
+    "id": "103",
+    "name": "Green Roof Snow Removal",
+    "categories": ["Property Maintenance", "Sustainable Practices"],
+    "specialization": "Provides snow removal services for green roofs using eco-friendly methods and equipment.",
+    "initial_bid_range": [100, 500],
+    "bid_unit": "per service",
+    "reduction_strategy": "percentage",
+    "min_bid": 90
+  },
+  {
+    "id": "104",
+    "name": "Eco-Friendly Boat Cleaning",
+    "categories": ["Marine Services", "Water Conservation"],
+    "specialization": "Offers boat cleaning and maintenance services using biodegradable products and water-saving techniques.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per boat",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "105",
+    "name": "Sustainable Tiny House Design",
+    "categories": ["Architecture", "Sustainable Living"],
+    "specialization": "Designs custom tiny houses with a focus on sustainability and minimal environmental impact.",
+    "initial_bid_range": [1000, 5000],
+    "bid_unit": "per design",
+    "reduction_strategy": "percentage",
+    "min_bid": 900
+  },
+  {
+    "id": "106",
+    "name": "Green Firewood Delivery",
+    "categories": ["Home Heating", "Sustainable Forestry"],
+    "specialization": "Delivers responsibly sourced firewood from sustainably managed forests.",
+    "initial_bid_range": [100, 300],
+    "bid_unit": "per cord",
+    "reduction_strategy": "fixed",
+    "min_bid": 90
+  },
+  {
+    "id": "107",
+    "name": "Eco-Friendly Instrument Repair",
+    "categories": ["Music", "Repair Services"],
+    "specialization": "Repairs musical instruments using sustainable materials and practices.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per repair",
+    "reduction_strategy": "percentage",
+    "min_bid": 45
+  },
+  {
+    "id": "108",
+    "name": "Sustainable Confetti Service",
+    "categories": ["Event Planning", "Biodegradable Products"],
+    "specialization": "Provides biodegradable confetti options for events and celebrations.",
+    "initial_bid_range": [20, 100],
+    "bid_unit": "per kg",
+    "reduction_strategy": "fixed",
+    "min_bid": 18
+  },
+  {
+    "id": "109",
+    "name": "Green Roof Yoga Classes",
+    "categories": ["Fitness", "Urban Green Spaces"],
+    "specialization": "Conducts yoga classes on green roofs, promoting both wellness and appreciation for urban green spaces.",
+    "initial_bid_range": [10, 30],
+    "bid_unit": "per person per class",
+    "reduction_strategy": "percentage",
+    "min_bid": 9
+  },
+  {
+    "id": "110",
+    "name": "Eco-Friendly Locksmith",
+    "categories": ["Home Security", "Sustainable Practices"],
+    "specialization": "Provides locksmith services using sustainable materials and practices.",
+    "initial_bid_range": [50, 150],
+    "bid_unit": "per service",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "111",
+    "name": "Sustainable Balloon Alternatives",
+    "categories": ["Event Planning", "Eco-friendly Products"],
+    "specialization": "Provides biodegradable and reusable alternatives to traditional balloons for events.",
+    "initial_bid_range": [30, 100],
+    "bid_unit": "per event",
+    "reduction_strategy": "percentage",
+    "min_bid": 25
+  },
+  {
+    "id": "112",
+    "name": "Eco-Friendly Pressure Washing",
+    "categories": ["Home Maintenance", "Water Conservation"],
+    "specialization": "Offers pressure washing services using water-efficient equipment and biodegradable cleaning agents.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per service",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "113",
+    "name": "Green Roof Beekeeping",
+    "categories": ["Urban Agriculture", "Ecosystem Services"],
+    "specialization": "Installs and maintains beehives on green roofs, promoting urban biodiversity.",
+    "initial_bid_range": [200, 500],
+    "bid_unit": "per hive per year",
+    "reduction_strategy": "percentage",
+    "min_bid": 180
+  },
+  {
+    "id": "114",
+    "name": "Sustainable Funeral Planning",
+    "categories": ["End-of-Life Services", "Eco-friendly Practices"],
+    "specialization": "Plans eco-friendly funerals using biodegradable materials and carbon-offsetting practices.",
+    "initial_bid_range": [1000, 5000],
+    "bid_unit": "per service",
+    "reduction_strategy": "fixed",
+    "min_bid": 900
+  },
+  {
+    "id": "115",
+    "name": "Eco-Friendly Graffiti Art",
+    "categories": ["Urban Art", "Sustainable Practices"],
+    "specialization": "Creates commissioned graffiti art using eco-friendly, non-toxic paints and materials.",
+    "initial_bid_range": [200, 1000],
+    "bid_unit": "per project",
+    "reduction_strategy": "percentage",
+    "min_bid": 180
+  },
+  {
+    "id": "116",
+    "name": "Green Roof Wildlife Habitat Creation",
+    "categories": ["Urban Ecology", "Landscaping"],
+    "specialization": "Designs and installs wildlife-friendly habitats on green roofs to promote urban biodiversity.",
+    "initial_bid_range": [500, 2000],
+    "bid_unit": "per project",
+    "reduction_strategy": "fixed",
+    "min_bid": 450
+  },
+  {
+    "id": "117",
+    "name": "Sustainable Dorm Room Design",
+    "categories": ["Interior Design", "Student Services"],
+    "specialization": "Offers eco-friendly dorm room design and furnishing services for college students.",
+    "initial_bid_range": [100, 500],
+    "bid_unit": "per room",
+    "reduction_strategy": "percentage",
+    "min_bid": 90
+  },
+  {
+    "id": "118",
+    "name": "Eco-Friendly Boat Winterization",
+    "categories": ["Marine Services", "Seasonal Maintenance"],
+    "specialization": "Provides boat winterization services using environmentally friendly anti-freeze and sustainable practices.",
+    "initial_bid_range": [200, 1000],
+    "bid_unit": "per boat",
+    "reduction_strategy": "fixed",
+    "min_bid": 180
+  },
+  {
+    "id": "119",
+    "name": "Green Roof Ice Skating Rink",
+    "categories": ["Winter Recreation", "Urban Green Spaces"],
+    "specialization": "Installs and operates eco-friendly ice skating rinks on green roofs during winter months.",
+    "initial_bid_range": [5, 15],
+    "bid_unit": "per person per hour",
+    "reduction_strategy": "percentage",
+    "min_bid": 4
+  },
+  {
+    "id": "120",
+    "name": "Sustainable Swim Lesson Program",
+    "categories": ["Fitness", "Water Conservation"],
+    "specialization": "Offers swimming lessons in facilities using energy-efficient pool heating and water recycling systems.",
+    "initial_bid_range": [20, 50],
+    "bid_unit": "per lesson",
+    "reduction_strategy": "fixed",
+    "min_bid": 18
+  },
+  {
+    "id": "121",
+    "name": "Eco-Friendly Chimney Sweep",
+    "categories": ["Home Maintenance", "Air Quality"],
+    "specialization": "Provides chimney cleaning services using environmentally safe cleaning products and practices.",
+    "initial_bid_range": [100, 300],
+    "bid_unit": "per service",
+    "reduction_strategy": "percentage",
+    "min_bid": 90
+  },
+  {
+    "id": "122",
+    "name": "Sustainable Pottery Classes",
+    "categories": ["Arts Education", "Upcycling"],
+    "specialization": "Offers pottery classes using recycled clay and eco-friendly glazes.",
+    "initial_bid_range": [30, 80],
+    "bid_unit": "per class",
+    "reduction_strategy": "fixed",
+    "min_bid": 25
+  },
+  {
+    "id": "123",
+    "name": "Green Roof Film Screenings",
+    "categories": ["Entertainment", "Urban Green Spaces"],
+    "specialization": "Organizes eco-themed film screenings on green roofs using energy-efficient projection equipment.",
+    "initial_bid_range": [10, 30],
+    "bid_unit": "per person per screening",
+    "reduction_strategy": "percentage",
+    "min_bid": 8
+  },
+  {
+    "id": "124",
+    "name": "Eco-Friendly Tattoo Studio",
+    "categories": ["Body Art", "Sustainable Practices"],
+    "specialization": "Provides tattoo services using vegan inks and environmentally friendly practices.",
+    "initial_bid_range": [100, 500],
+    "bid_unit": "per hour",
+    "reduction_strategy": "fixed",
+    "min_bid": 90
+  },
+  {
+    "id": "125",
+    "name": "Sustainable Sauna Installation",
+    "categories": ["Home Improvement", "Energy Efficiency"],
+    "specialization": "Installs eco-friendly saunas using sustainable wood and energy-efficient heating systems.",
+    "initial_bid_range": [2000, 10000],
+    "bid_unit": "per installation",
+    "reduction_strategy": "percentage",
+    "min_bid": 1800
+  },
+  {
+    "id": "126",
+    "name": "Green Roof Stargazing Tours",
+    "categories": ["Education", "Urban Astronomy"],
+    "specialization": "Conducts stargazing tours on green roofs, promoting astronomy education and appreciation for dark skies.",
+    "initial_bid_range": [20, 50],
+    "bid_unit": "per person per tour",
+    "reduction_strategy": "fixed",
+    "min_bid": 18
+  },
+  {
+    "id": "127",
+    "name": "Eco-Friendly Appliance Recycling",
+    "categories": ["Waste Management", "Home Services"],
+    "specialization": "Collects and responsibly recycles old household appliances, ensuring proper disposal of hazardous materials.",
+    "initial_bid_range": [30, 100],
+    "bid_unit": "per appliance",
+    "reduction_strategy": "percentage",
+    "min_bid": 25
+  },
+  {
+    "id": "128",
+    "name": "Sustainable Parkour Classes",
+    "categories": ["Fitness", "Urban Recreation"],
+    "specialization": "Offers parkour classes in urban environments, promoting sustainable, equipment-free fitness.",
+    "initial_bid_range": [15, 40],
+    "bid_unit": "per class",
+    "reduction_strategy": "fixed",
+    "min_bid": 12
+  },
+  {
+    "id": "129",
+    "name": "Green Roof Meditation Retreats",
+    "categories": ["Wellness", "Urban Green Spaces"],
+    "specialization": "Organizes meditation and mindfulness retreats on green roofs in urban settings.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per person per day",
+    "reduction_strategy": "percentage",
+    "min_bid": 45
+  },
+  {
+    "id": "130",
+    "name": "Eco-Friendly 3D Printing Service",
+    "categories": ["Manufacturing", "Sustainable Technology"],
+    "specialization": "Provides 3D printing services using biodegradable and recycled materials.",
+    "initial_bid_range": [20, 100],
+    "bid_unit": "per hour of printing",
+    "reduction_strategy": "fixed",
+    "min_bid": 18
+  },
+  {
+    "id": "131",
+    "name": "Sustainable Escape Room Experiences",
+    "categories": ["Entertainment", "Education"],
+    "specialization": "Designs and operates escape rooms with environmental themes using sustainable materials.",
+    "initial_bid_range": [20, 50],
+    "bid_unit": "per person per game",
+    "reduction_strategy": "percentage",
+    "min_bid": 18
+  },
+  {
+    "id": "132",
+    "name": "Green Roof Apiculture Workshops",
+    "categories": ["Education", "Urban Agriculture"],
+    "specialization": "Conducts workshops on urban beekeeping on green roofs, promoting pollinator conservation.",
+    "initial_bid_range": [50, 150],
+    "bid_unit": "per person per workshop",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "133",
+    "name": "Eco-Friendly Boat Share",
+    "categories": ["Recreation", "Sharing Economy"],
+    "specialization": "Operates a boat sharing service using electric and solar-powered watercraft.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per half-day rental",
+    "reduction_strategy": "percentage",
+    "min_bid": 45
+  },
+  {
+    "id": "134",
+    "name": "Sustainable Tiny House Vacation Rentals",
+    "categories": ["Tourism", "Sustainable Living"],
+    "specialization": "Offers eco-friendly tiny house rentals for vacations and retreats.",
+    "initial_bid_range": [50, 200],
+    "bid_unit": "per night",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "135",
+    "name": "Green Roof Farmers Market",
+    "categories": ["Local Food", "Urban Agriculture"],
+    "specialization": "Organizes and manages farmers markets on green roofs, promoting local and sustainable food production.",
+    "initial_bid_range": [5, 20],
+    "bid_unit": "per vendor per day",
+    "reduction_strategy": "percentage",
+    "min_bid": 4
+  },
+  {
+    "id": "136",
+    "name": "Eco-Friendly Synthetic Turf Installation",
+    "categories": ["Landscaping", "Water Conservation"],
+    "specialization": "Installs water-efficient, recyclable synthetic turf for residential and commercial properties.",
+    "initial_bid_range": [10, 30],
+    "bid_unit": "per square meter",
+    "reduction_strategy": "fixed",
+    "min_bid": 9
+  },
+  {
+    "id": "137",
+    "name": "Sustainable Aquarium Design",
+    "categories": ["Pet Care", "Interior Design"],
+    "specialization": "Designs and installs eco-friendly aquariums using energy-efficient systems and sustainable practices.",
+    "initial_bid_range": [500, 5000],
+    "bid_unit": "per project",
+    "reduction_strategy": "percentage",
+    "min_bid": 450
+  },
+  {
+    "id": "138",
+    "name": "Green Roof Yoga Retreat",
+    "categories": ["Wellness", "Urban Green Spaces"],
+    "specialization": "Organizes yoga and wellness retreats on green roofs in urban settings.",
+    "initial_bid_range": [100, 500],
+    "bid_unit": "per person per day",
+    "reduction_strategy": "fixed",
+    "min_bid": 90
+  },
+  {
+    "id": "139",
+    "name": "Eco-Friendly Trauma Scene Cleaning",
+    "categories": ["Specialized Cleaning", "Biohazard Management"],
+    "specialization": "Provides trauma and crime scene cleaning services using environmentally safe cleaning agents and disposal methods.",
+    "initial_bid_range": [500, 5000],
+    "bid_unit": "per service",
+    "reduction_strategy": "percentage",
+    "min_bid": 450
+  },
+  {
+    "id": "140",
+    "name": "Sustainable Prop Rentals",
+    "categories": ["Event Planning", "Sharing Economy"],
+    "specialization": "Rents out eco-friendly, reusable props and decorations for events and photo shoots.",
+    "initial_bid_range": [50, 500],
+    "bid_unit": "per event",
+    "reduction_strategy": "fixed",
+    "min_bid": 45
+  },
+  {
+    "id": "141",
+    "name": "Green Roof Astronomy Classes",
+    "categories": ["Education", "Urban Astronomy"],
+    "specialization": "Conducts astronomy classes and stargazing sessions on green roofs, promoting science education.",
+    "initial_bid_range": [20, 50],
+    "bid_unit": "per person per class",
+    "reduction_strategy": "percentage",
+    "min_bid": 18
+  },
+  {
+    "id": "142",
+    "name": "Eco-Friendly Vending Machines",
+    "categories": ["Retail", "Energy Efficiency"],
+    "specialization": "Operates energy-efficient vending machines stocked with sustainable and healthy snack options.",
+    "initial_bid_range": [100, 500],
+    "bid_unit": "per machine per month",
+    "reduction_strategy": "fixed",
+    "min_bid": 90
+  },
+  {
+    "id": "143",
+    "name": "Sustainable Cosplay Costume Rentals",
+    "categories": ["Entertainment", "Sharing Economy"],
+    "specialization": "Rents out eco-friendly and upcycled cosplay costumes for events and conventions.",
+    "initial_bid_range": [30, 150],
+    "bid_unit": "per costume per day",
+    "reduction_strategy": "percentage",
+    "min_bid": 25
+  },
+  {
+    "id": "144",
+    "name": "Green Roof Vertical Wind Turbine Installation",
+    "categories": ["Renewable Energy", "Urban Green Spaces"],
+    "specialization": "Installs small-scale vertical wind turbines on green roofs for local energy production.",
+    "initial_bid_range": [1000, 5000],
+    "bid_unit": "per installation",
+    "reduction_strategy": "fixed",
+    "min_bid": 900
+  },
+  {
+    "id": "145",
+    "name": "Eco-Friendly Fabric Dyeing Workshop",
+    "categories": ["Crafts", "Sustainable Fashion"],
+    "specialization": "Conducts workshops on natural and low-impact fabric dyeing techniques.",
+    "initial_bid_range": [50, 150],
+    "bid_unit": "per person per workshop",
+    "reduction_strategy": "percentage",
+    "min_bid": 45
   }
 ]
