@@ -1,0 +1,575 @@
+========== FILE: config.py ==========
+
+# config.py
+
+AGENT_CATEGORIES = [
+    "Smart Manufacturing",
+    "Industrial IoT",
+    "Predictive Maintenance",
+    "Digital Twin",
+    "Robotics and Automation",
+    "AI and Machine Learning",
+    "Cybersecurity",
+    "Cloud Computing",
+    "Big Data Analytics",
+    "Additive Manufacturing",
+    "Augmented Reality",
+    "Blockchain",
+    "Energy Efficiency",
+    "Sustainable Supply Chain",
+    "Circular Economy",
+    "Waste Reduction",
+    "Water Management",
+    "Emissions Control"
+]
+
+DUMMY_AGENTS = [
+    {
+        "id": "001",
+        "name": "SmartFactory Solutions",
+        "categories": ["Smart Manufacturing", "Industrial IoT"],
+        "specialization": "Implements comprehensive smart factory solutions, integrating IoT sensors, real-time monitoring, and adaptive manufacturing processes.",
+        "initial_bid_range": (100000, 250000),
+        "reduction_strategy": "percentage",
+        "min_bid": 90000
+    },
+    {
+        "id": "002",
+        "name": "PredictiveTech",
+        "categories": ["Predictive Maintenance", "AI and Machine Learning"],
+        "specialization": "Develops AI-driven predictive maintenance systems for industrial equipment, reducing downtime and extending machinery lifespan.",
+        "initial_bid_range": (80000, 180000),
+        "reduction_strategy": "fixed",
+        "min_bid": 70000
+    },
+    {
+        "id": "003",
+        "name": "DigitalTwin Innovators",
+        "categories": ["Digital Twin", "Big Data Analytics"],
+        "specialization": "Creates digital twin solutions for complex industrial processes, enabling real-time simulation and optimization.",
+        "initial_bid_range": (120000, 280000),
+        "reduction_strategy": "random",
+        "min_bid": 100000
+    },
+    {
+        "id": "004",
+        "name": "RoboSustain",
+        "categories": ["Robotics and Automation", "Energy Efficiency"],
+        "specialization": "Designs and implements energy-efficient robotic systems for automated manufacturing and warehouse operations.",
+        "initial_bid_range": (150000, 350000),
+        "reduction_strategy": "percentage",
+        "min_bid": 130000
+    },
+    {
+        "id": "005",
+        "name": "CyberShield Industries",
+        "categories": ["Cybersecurity", "Industrial IoT"],
+        "specialization": "Provides robust cybersecurity solutions for industrial IoT networks, ensuring data integrity and system protection.",
+        "initial_bid_range": (90000, 200000),
+        "reduction_strategy": "fixed",
+        "min_bid": 80000
+    },
+    {
+        "id": "006",
+        "name": "CloudManufacture",
+        "categories": ["Cloud Computing", "Smart Manufacturing"],
+        "specialization": "Offers cloud-based manufacturing platforms, enabling distributed production and real-time supply chain management.",
+        "initial_bid_range": (110000, 260000),
+        "reduction_strategy": "random",
+        "min_bid": 95000
+    },
+    {
+        "id": "007",
+        "name": "DataDriven Sustainability",
+        "categories": ["Big Data Analytics", "Sustainable Supply Chain"],
+        "specialization": "Utilizes big data analytics to optimize supply chains for sustainability, reducing waste and improving efficiency.",
+        "initial_bid_range": (100000, 230000),
+        "reduction_strategy": "percentage",
+        "min_bid": 85000
+    },
+    {
+        "id": "008",
+        "name": "3DPrint Green",
+        "categories": ["Additive Manufacturing", "Waste Reduction"],
+        "specialization": "Provides sustainable 3D printing solutions, using recycled materials and optimizing designs for minimal waste.",
+        "initial_bid_range": (70000, 160000),
+        "reduction_strategy": "fixed",
+        "min_bid": 60000
+    },
+    {
+        "id": "009",
+        "name": "AugmentedOps",
+        "categories": ["Augmented Reality", "Smart Manufacturing"],
+        "specialization": "Develops AR solutions for industrial operations, improving worker efficiency and reducing errors in complex tasks.",
+        "initial_bid_range": (85000, 190000),
+        "reduction_strategy": "random",
+        "min_bid": 75000
+    },
+    {
+        "id": "010",
+        "name": "BlockchainTraceability",
+        "categories": ["Blockchain", "Sustainable Supply Chain"],
+        "specialization": "Implements blockchain solutions for supply chain traceability, ensuring ethical sourcing and sustainable practices.",
+        "initial_bid_range": (95000, 220000),
+        "reduction_strategy": "percentage",
+        "min_bid": 80000
+    },
+    {
+        "id": "011",
+        "name": "EnergyAI Optimizers",
+        "categories": ["Energy Efficiency", "AI and Machine Learning"],
+        "specialization": "Uses AI to optimize energy consumption in industrial processes, significantly reducing carbon footprint.",
+        "initial_bid_range": (110000, 250000),
+        "reduction_strategy": "fixed",
+        "min_bid": 95000
+    },
+    {
+        "id": "012",
+        "name": "CircularTech Solutions",
+        "categories": ["Circular Economy", "Smart Manufacturing"],
+        "specialization": "Designs manufacturing processes and products for circular economy, maximizing resource reuse and recycling.",
+        "initial_bid_range": (120000, 270000),
+        "reduction_strategy": "random",
+        "min_bid": 100000
+    },
+    {
+        "id": "013",
+        "name": "ZeroWaste Manufacturing",
+        "categories": ["Waste Reduction", "Industrial IoT"],
+        "specialization": "Implements IoT-based waste reduction solutions in manufacturing, aiming for zero-waste production.",
+        "initial_bid_range": (90000, 200000),
+        "reduction_strategy": "percentage",
+        "min_bid": 75000
+    },
+    {
+        "id": "014",
+        "name": "AquaIndustry 4.0",
+        "categories": ["Water Management", "Smart Manufacturing"],
+        "specialization": "Develops smart water management systems for industries, optimizing usage and implementing advanced recycling technologies.",
+        "initial_bid_range": (100000, 230000),
+        "reduction_strategy": "fixed",
+        "min_bid": 85000
+    },
+    {
+        "id": "015",
+        "name": "CleanAir Industria",
+        "categories": ["Emissions Control", "Industrial IoT"],
+        "specialization": "Provides IoT-based emissions monitoring and control systems, ensuring regulatory compliance and minimizing environmental impact.",
+        "initial_bid_range": (110000, 260000),
+        "reduction_strategy": "random",
+        "min_bid": 95000
+    },
+    {
+        "id": "016",
+        "name": "AI Quality Control",
+        "categories": ["AI and Machine Learning", "Smart Manufacturing"],
+        "specialization": "Implements AI-driven quality control systems, reducing defects and optimizing resource use in manufacturing.",
+        "initial_bid_range": (95000, 220000),
+        "reduction_strategy": "percentage",
+        "min_bid": 80000
+    },
+    {
+        "id": "017",
+        "name": "CognitiveMaintenance Pro",
+        "categories": ["Predictive Maintenance", "Big Data Analytics"],
+        "specialization": "Offers cognitive computing solutions for equipment maintenance, predicting failures and optimizing maintenance schedules.",
+        "initial_bid_range": (105000, 240000),
+        "reduction_strategy": "fixed",
+        "min_bid": 90000
+    },
+    {
+        "id": "018",
+        "name": "SupplyChainAI",
+        "categories": ["AI and Machine Learning", "Sustainable Supply Chain"],
+        "specialization": "Uses AI to optimize entire supply chains for sustainability, from sourcing to delivery, minimizing environmental impact.",
+        "initial_bid_range": (115000, 270000),
+        "reduction_strategy": "random",
+        "min_bid": 100000
+    },
+    {
+        "id": "019",
+        "name": "EdgeCompute Green",
+        "categories": ["Industrial IoT", "Energy Efficiency"],
+        "specialization": "Provides edge computing solutions for industrial IoT, optimizing data processing and reducing energy consumption.",
+        "initial_bid_range": (85000, 190000),
+        "reduction_strategy": "percentage",
+        "min_bid": 70000
+    },
+    {
+        "id": "020",
+        "name": "Quantum Optimization Systems",
+        "categories": ["AI and Machine Learning", "Energy Efficiency"],
+        "specialization": "Utilizes quantum computing algorithms for complex industrial optimization problems, significantly improving efficiency.",
+        "initial_bid_range": (200000, 450000),
+        "reduction_strategy": "fixed",
+        "min_bid": 180000
+    }
+]
+
+ 
+
+========== FILE: main.py ==========
+
+from agents.agent import Agent
+from agents.bidding import conduct_bidding
+from database.vector_store import VectorStore
+from matching.query_matcher import match_query_to_agents
+from blockchain.vechain_integration import reward_winner
+from config import DUMMY_AGENTS
+
+def main():
+    # Initialize vector store and add dummy agents
+    vector_store = VectorStore()
+    agents = [Agent(**agent_data) for agent_data in DUMMY_AGENTS]
+    vector_store.add_agents(agents)
+
+    while True:
+        query = input("\nEnter your sustainability query (or 'quit' to exit): ")
+        if query.lower() == 'quit':
+            break
+
+        # Match query to agents
+        matched_agents = match_query_to_agents(vector_store, query)
+        print("Matched Agents:")
+        for agent in matched_agents:
+            print(f"- {agent.name} (ID: {agent.id})")
+            print(f"  Specialization: {agent.specialization}")
+
+        # Conduct bidding
+        if matched_agents:
+            winning_bid = conduct_bidding(matched_agents)
+            print(f"\nWinning bid: Agent {winning_bid.agent_id} with ${winning_bid.amount:.2f}")
+
+            # Reward winner with VeChain tokens
+            reward_winner(winning_bid.agent_id, winning_bid.amount)
+        else:
+            print("No matching agents found.")
+
+if __name__ == "__main__":
+    main()
+
+ 
+
+========== FILE: AgentDatabase/vectorstore.py ==========
+
+from langchain_community.document_loaders import JSONLoader
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
+
+def metadata_func(record: dict, metadata: dict) -> dict:
+    metadata["source"] = " "
+    metadata["id"] = str(record.get("id", ""))
+    metadata["name"] = str(record.get("name", ""))
+    metadata["categories"] = str(record.get("categories", []))
+    metadata["specialization"] = str(record.get("specialization", ""))
+    metadata["initial_bid_range"] = str(record.get("initial_bid_range", []))
+    metadata["reduction_strategy"] = str(record.get("reduction_strategy", ""))
+    metadata["min_bid"] = str(record.get("min_bid", ""))
+    
+    # Remove any None values
+    metadata = {k: v for k, v in metadata.items() if v is not None}
+    
+    return metadata
+
+loader = JSONLoader(
+    file_path='AgentDatabase/AgentDatabase.json',
+    jq_schema='.[]',
+    content_key='specialization',
+    metadata_func=metadata_func
+)
+
+agents = loader.load()
+
+# Checking format
+print(agents[1])
+
+embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+
+# Save to disk
+vectorstore = Chroma.from_documents(agents, embedding_function, persist_directory="./AgentDatabase/chroma_db")
+
+print("Done")
+
+ 
+
+========== FILE: BiddingSystem/query.py ==========
+
+# query_system.py
+
+from langchain_community.vectorstores import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+import json
+from bidding_system import Agent, run_bidding_simulation
+
+def create_agents_from_docs(docs):
+    agents = []
+    for doc in docs:
+        metadata = doc.metadata
+        agent = Agent(
+            id=metadata['id'],
+            name=metadata['name'],
+            initial_bid_range=json.loads(metadata['initial_bid_range'].replace("'", '"')),
+            reduction_strategy=metadata['reduction_strategy'],
+            min_bid=int(metadata['min_bid']),
+            specializations=json.loads(metadata['categories'].replace("'", '"'))
+        )
+        agents.append(agent)
+    return agents
+
+# Set up vector store and retriever
+embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+vectorstore = Chroma(persist_directory="./AgentDatabase/chroma_db", embedding_function=embedding_function)
+retriever = vectorstore.as_retriever(search_kwargs={"k": 4})  # Retrieve 4 agents
+
+# Query for relevant agents
+query = "industrial processes inspired by natural biological systems"
+docs = retriever.get_relevant_documents(query)
+
+# Create Agent objects from the retrieved documents
+agents = create_agents_from_docs(docs)
+
+# Set up bidding parameters
+project_complexity = 1.2
+required_specializations = ["Green Chemistry", "Smart Manufacturing", "Robotics and Automation", "AI and Machine Learning"]
+
+# Run the bidding simulation
+winner, winning_bid, vechain_log, vechain_hash = run_bidding_simulation(agents, project_complexity, required_specializations)
+
+# Print results
+print(f"\nSimulation complete. Winner: {winner} with bid: ${winning_bid}")
+print(f"VeChain Log Hash: {vechain_hash}")
+print("\nVeChain Log:")
+print(json.dumps(json.loads(vechain_log), indent=2))
+
+ 
+
+========== FILE: BiddingSystem/querymatching.py ==========
+
+from typing import List
+from database.vector_store import VectorStore
+from agents.agent import Agent
+
+def match_query_to_agents(vector_store: VectorStore, query: str, top_k: int = 3) -> List[Agent]:
+    matched_docs = vector_store.search(query, top_k)
+    matched_agents = [vector_store.agents[doc.metadata['id']] for doc in matched_docs]
+    return matched_agents
+
+ 
+
+========== FILE: BiddingSystem/agents.py ==========
+
+from dataclasses import dataclass
+import random
+from typing import Tuple
+
+@dataclass
+class Bid:
+    agent_id: str
+    amount: float
+
+@dataclass
+class Agent:
+    id: str
+    name: str
+    specialization: str
+    initial_bid_range: Tuple[float, float]
+    reduction_strategy: str
+    min_bid: float
+
+    def place_bid(self, current_lowest_bid: float) -> Bid:
+        if self.reduction_strategy == "percentage":
+            bid_amount = max(current_lowest_bid * 0.95, self.min_bid)
+        elif self.reduction_strategy == "fixed":
+            bid_amount = max(current_lowest_bid - 100, self.min_bid)
+        else:  # random
+            bid_amount = max(random.uniform(self.min_bid, current_lowest_bid), self.min_bid)
+        
+        return Bid(self.id, round(bid_amount, 2))
+
+ 
+
+========== FILE: BiddingSystem/bidding_system.py ==========
+
+
+import random
+import json
+import time
+from typing import List, Dict, Tuple
+import hashlib
+
+class Agent:
+    def __init__(self, id: str, name: str, initial_bid_range: List[int], reduction_strategy: str, min_bid: int, specializations: List[str]):
+        self.id = id
+        self.name = name
+        self.initial_bid_range = initial_bid_range
+        self.reduction_strategy = reduction_strategy
+        self.min_bid = min_bid
+        self.specializations = specializations
+        self.current_bid = None
+        self.reputation = random.uniform(0.5, 1.0)  # Initial reputation score
+
+    def place_initial_bid(self, project_complexity: float):
+        base_bid = random.randint(self.initial_bid_range[0], self.initial_bid_range[1])
+        self.current_bid = int(base_bid * project_complexity * self.reputation)
+        return self.current_bid
+
+    def place_bid(self, current_lowest_bid: int, round: int) -> Tuple[int, float]:
+        if self.reduction_strategy == "percentage":
+            new_bid = max(int(self.current_bid * (0.98 - (round * 0.01))), self.min_bid)
+        elif self.reduction_strategy == "fixed":
+            new_bid = max(self.current_bid - (5000 + (round * 1000)), self.min_bid)
+        else:  # random
+            new_bid = max(random.randint(self.min_bid, self.current_bid - 1), self.min_bid)
+
+        if new_bid < current_lowest_bid:
+            self.current_bid = new_bid
+            bid_time = time.time()  # Timestamp for the bid
+            return new_bid, bid_time
+        return None, None
+
+class Coalition:
+    def __init__(self, agents: List[Agent]):
+        self.agents = agents
+        self.specializations = list(set([spec for agent in agents for spec in agent.specializations]))
+        self.reputation = sum([agent.reputation for agent in agents]) / len(agents)
+
+    def place_bid(self, current_lowest_bid: int, round: int) -> Tuple[int, float]:
+        individual_bids = [agent.place_bid(current_lowest_bid, round) for agent in self.agents]
+        valid_bids = [bid for bid, _ in individual_bids if bid is not None]
+        if valid_bids:
+            coalition_bid = int(sum(valid_bids) * 0.9)  # 10% discount for coalition
+            if coalition_bid < current_lowest_bid:
+                bid_time = time.time()
+                return coalition_bid, bid_time
+        return None, None
+
+class BiddingSystem:
+    def __init__(self, agents: List[Agent], project_complexity: float, required_specializations: List[str]):
+        self.agents = agents
+        self.project_complexity = project_complexity
+        self.required_specializations = required_specializations
+        self.rounds = 5
+        self.bids = {}
+        self.bid_logs = []
+        self.coalitions = self.form_coalitions()
+
+    def form_coalitions(self) -> List[Coalition]:
+        coalitions = []
+        for i in range(len(self.agents)):
+            for j in range(i+1, len(self.agents)):
+                if set(self.agents[i].specializations + self.agents[j].specializations) == set(self.required_specializations):
+                    coalitions.append(Coalition([self.agents[i], self.agents[j]]))
+        return coalitions
+
+    def initial_bidding(self):
+        for agent in self.agents + self.coalitions:
+            if isinstance(agent, Agent):
+                self.bids[agent.id] = agent.place_initial_bid(self.project_complexity)
+            else:  # Coalition
+                self.bids[f"Coalition_{'-'.join([a.id for a in agent.agents])}"] = sum([a.place_initial_bid(self.project_complexity) for a in agent.agents])
+        
+    def run_bidding(self):
+        self.initial_bidding()
+        print("Initial bids:")
+        self.print_bids()
+        self.log_round("initial")
+
+        for round in range(1, self.rounds + 1):
+            print(f"\nRound {round}:")
+            current_lowest_bid = min(self.bids.values())
+            new_bids = {}
+
+            for agent in self.agents + self.coalitions:
+                new_bid, bid_time = agent.place_bid(current_lowest_bid, round)
+                if new_bid:
+                    if isinstance(agent, Agent):
+                        new_bids[agent.id] = new_bid
+                        self.log_bid(agent.id, new_bid, bid_time, round)
+                    else:  # Coalition
+                        coalition_id = f"Coalition_{'-'.join([a.id for a in agent.agents])}"
+                        new_bids[coalition_id] = new_bid
+                        self.log_bid(coalition_id, new_bid, bid_time, round)
+                else:
+                    if isinstance(agent, Agent):
+                        new_bids[agent.id] = self.bids[agent.id]
+                    else:  # Coalition
+                        new_bids[f"Coalition_{'-'.join([a.id for a in agent.agents])}"] = self.bids[f"Coalition_{'-'.join([a.id for a in agent.agents])}"]
+
+            self.bids = new_bids
+            self.print_bids()
+            self.log_round(round)
+
+        winner = min(self.bids, key=self.bids.get)
+        winning_bid = self.bids[winner]
+        if winner.startswith("Coalition"):
+            print(f"\nWinner: Coalition {winner} with a bid of ${winning_bid}")
+        else:
+            winning_agent = next(agent for agent in self.agents if agent.id == winner)
+            print(f"\nWinner: {winning_agent.name} (ID: {winner}) with a bid of ${winning_bid}")
+            winning_agent.reputation += 0.1  # Increase reputation for winning
+
+        return winner, winning_bid
+
+    def print_bids(self):
+        for agent_id, bid in self.bids.items():
+            if agent_id.startswith("Coalition"):
+                print(f"{agent_id}: ${bid}")
+            else:
+                agent = next(agent for agent in self.agents if agent.id == agent_id)
+                print(f"{agent.name} (ID: {agent_id}): ${bid}")
+
+    def log_bid(self, agent_id: str, bid: int, timestamp: float, round: int):
+        log_entry = {
+            "agent_id": agent_id,
+            "bid": bid,
+            "timestamp": timestamp,
+            "round": round
+        }
+        self.bid_logs.append(log_entry)
+
+    def log_round(self, round):
+        log_entry = {
+            "round": round,
+            "bids": self.bids.copy()
+        }
+        self.bid_logs.append(log_entry)
+
+    def generate_vechain_log(self):
+        vechain_log = {
+            "project_complexity": self.project_complexity,
+            "required_specializations": self.required_specializations,
+            "bidding_logs": self.bid_logs,
+            "final_result": {
+                "winner": min(self.bids, key=self.bids.get),
+                "winning_bid": min(self.bids.values())
+            }
+        }
+        return json.dumps(vechain_log)
+
+    def get_vechain_hash(self):
+        vechain_log = self.generate_vechain_log()
+        return hashlib.sha256(vechain_log.encode()).hexdigest()
+
+def run_bidding_simulation(agents: List[Agent], project_complexity: float, required_specializations: List[str]):
+    bidding_system = BiddingSystem(agents, project_complexity, required_specializations)
+    winner, winning_bid = bidding_system.run_bidding()
+    vechain_log = bidding_system.generate_vechain_log()
+    vechain_hash = bidding_system.get_vechain_hash()
+    return winner, winning_bid, vechain_log, vechain_hash
+
+ 
+
+========== FILE: Blockchain/vechain_integration.py ==========
+
+# Note: This is a mock implementation. You'll need to replace this with actual VeChain integration.
+def reward_winner(agent_id: str, bid_amount: float):
+    reward_amount = calculate_reward(bid_amount)
+    print(f"Rewarding agent {agent_id} with {reward_amount} B3TR tokens")
+    # Implement actual token transfer here
+
+def calculate_reward(bid_amount: float) -> float:
+    # This is a simple mock calculation. Replace with your actual reward calculation logic.
+    return round(bid_amount * 0.01, 2)  # 1% of bid amount as reward
+
+ 
+

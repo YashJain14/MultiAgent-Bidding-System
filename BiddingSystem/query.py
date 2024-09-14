@@ -26,7 +26,7 @@ vectorstore = Chroma(persist_directory="./AgentDatabase/chroma_db", embedding_fu
 retriever = vectorstore.as_retriever(search_kwargs={"k": 4})  # Retrieve 4 agents
 
 # Query for relevant agents
-query = "industrial processes inspired by natural biological systems"
+query = "upgrade my industry with ai"
 docs = retriever.get_relevant_documents(query)
 
 # Create Agent objects from the retrieved documents
