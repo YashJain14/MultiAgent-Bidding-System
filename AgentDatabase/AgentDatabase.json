@@ -1,0 +1,1155 @@
+[
+    {
+      "id": "001",
+      "name": "SmartFactory Solutions",
+      "categories": ["Smart Manufacturing", "Industrial IoT"],
+      "specialization": "Implements comprehensive smart factory solutions, integrating IoT sensors, real-time monitoring, and adaptive manufacturing processes.",
+      "initial_bid_range": [100000, 250000],
+      "reduction_strategy": "percentage",
+      "min_bid": 90000
+    },
+    {
+      "id": "002",
+      "name": "PredictiveTech",
+      "categories": ["Predictive Maintenance", "AI and Machine Learning"],
+      "specialization": "Develops AI-driven predictive maintenance systems for industrial equipment, reducing downtime and extending machinery lifespan.",
+      "initial_bid_range": [80000, 180000],
+      "reduction_strategy": "fixed",
+      "min_bid": 70000
+    },
+    {
+      "id": "003",
+      "name": "DigitalTwin Innovators",
+      "categories": ["Digital Twin", "Big Data Analytics"],
+      "specialization": "Creates digital twin solutions for complex industrial processes, enabling real-time simulation and optimization.",
+      "initial_bid_range": [120000, 280000],
+      "reduction_strategy": "random",
+      "min_bid": 100000
+    },
+    {
+      "id": "004",
+      "name": "RoboSustain",
+      "categories": ["Robotics and Automation", "Energy Efficiency"],
+      "specialization": "Designs and implements energy-efficient robotic systems for automated manufacturing and warehouse operations.",
+      "initial_bid_range": [150000, 350000],
+      "reduction_strategy": "percentage",
+      "min_bid": 130000
+    },
+    {
+      "id": "005",
+      "name": "CyberShield Industries",
+      "categories": ["Cybersecurity", "Industrial IoT"],
+      "specialization": "Provides robust cybersecurity solutions for industrial IoT networks, ensuring data integrity and system protection.",
+      "initial_bid_range": [90000, 200000],
+      "reduction_strategy": "fixed",
+      "min_bid": 80000
+    },
+    {
+      "id": "006",
+      "name": "CloudManufacture",
+      "categories": ["Cloud Computing", "Smart Manufacturing"],
+      "specialization": "Offers cloud-based manufacturing platforms, enabling distributed production and real-time supply chain management.",
+      "initial_bid_range": [110000, 260000],
+      "reduction_strategy": "random",
+      "min_bid": 95000
+    },
+    {
+      "id": "007",
+      "name": "DataDriven Sustainability",
+      "categories": ["Big Data Analytics", "Sustainable Supply Chain"],
+      "specialization": "Utilizes big data analytics to optimize supply chains for sustainability, reducing waste and improving efficiency.",
+      "initial_bid_range": [100000, 230000],
+      "reduction_strategy": "percentage",
+      "min_bid": 85000
+    },
+    {
+      "id": "008",
+      "name": "3DPrint Green",
+      "categories": ["Additive Manufacturing", "Waste Reduction"],
+      "specialization": "Provides sustainable 3D printing solutions, using recycled materials and optimizing designs for minimal waste.",
+      "initial_bid_range": [70000, 160000],
+      "reduction_strategy": "fixed",
+      "min_bid": 60000
+    },
+    {
+      "id": "009",
+      "name": "AugmentedOps",
+      "categories": ["Augmented Reality", "Smart Manufacturing"],
+      "specialization": "Develops AR solutions for industrial operations, improving worker efficiency and reducing errors in complex tasks.",
+      "initial_bid_range": [85000, 190000],
+      "reduction_strategy": "random",
+      "min_bid": 75000
+    },
+    {
+      "id": "010",
+      "name": "BlockchainTraceability",
+      "categories": ["Blockchain", "Sustainable Supply Chain"],
+      "specialization": "Implements blockchain solutions for supply chain traceability, ensuring ethical sourcing and sustainable practices.",
+      "initial_bid_range": [95000, 220000],
+      "reduction_strategy": "percentage",
+      "min_bid": 80000
+    },
+    {
+      "id": "011",
+      "name": "EnergyAI Optimizers",
+      "categories": ["Energy Efficiency", "AI and Machine Learning"],
+      "specialization": "Uses AI to optimize energy consumption in industrial processes, significantly reducing carbon footprint.",
+      "initial_bid_range": [110000, 250000],
+      "reduction_strategy": "fixed",
+      "min_bid": 95000
+    },
+    {
+      "id": "012",
+      "name": "CircularTech Solutions",
+      "categories": ["Circular Economy", "Smart Manufacturing"],
+      "specialization": "Designs manufacturing processes and products for circular economy, maximizing resource reuse and recycling.",
+      "initial_bid_range": [120000, 270000],
+      "reduction_strategy": "random",
+      "min_bid": 100000
+    },
+    {
+      "id": "013",
+      "name": "ZeroWaste Manufacturing",
+      "categories": ["Waste Reduction", "Industrial IoT"],
+      "specialization": "Implements IoT-based waste reduction solutions in manufacturing, aiming for zero-waste production.",
+      "initial_bid_range": [90000, 200000],
+      "reduction_strategy": "percentage",
+      "min_bid": 75000
+    },
+    {
+      "id": "014",
+      "name": "AquaIndustry 4.0",
+      "categories": ["Water Management", "Smart Manufacturing"],
+      "specialization": "Develops smart water management systems for industries, optimizing usage and implementing advanced recycling technologies.",
+      "initial_bid_range": [100000, 230000],
+      "reduction_strategy": "fixed",
+      "min_bid": 85000
+    },
+    {
+      "id": "015",
+      "name": "CleanAir Industria",
+      "categories": ["Emissions Control", "Industrial IoT"],
+      "specialization": "Provides IoT-based emissions monitoring and control systems, ensuring regulatory compliance and minimizing environmental impact.",
+      "initial_bid_range": [110000, 260000],
+      "reduction_strategy": "random",
+      "min_bid": 95000
+    },
+    {
+      "id": "016",
+      "name": "AI Quality Control",
+      "categories": ["AI and Machine Learning", "Smart Manufacturing"],
+      "specialization": "Implements AI-driven quality control systems, reducing defects and optimizing resource use in manufacturing.",
+      "initial_bid_range": [95000, 220000],
+      "reduction_strategy": "percentage",
+      "min_bid": 80000
+    },
+    {
+      "id": "017",
+      "name": "CognitiveMaintenance Pro",
+      "categories": ["Predictive Maintenance", "Big Data Analytics"],
+      "specialization": "Offers cognitive computing solutions for equipment maintenance, predicting failures and optimizing maintenance schedules.",
+      "initial_bid_range": [105000, 240000],
+      "reduction_strategy": "fixed",
+      "min_bid": 90000
+    },
+    {
+      "id": "018",
+      "name": "SupplyChainAI",
+      "categories": ["AI and Machine Learning", "Sustainable Supply Chain"],
+      "specialization": "Uses AI to optimize entire supply chains for sustainability, from sourcing to delivery, minimizing environmental impact.",
+      "initial_bid_range": [115000, 270000],
+      "reduction_strategy": "random",
+      "min_bid": 100000
+    },
+    {
+      "id": "019",
+      "name": "EdgeCompute Green",
+      "categories": ["Industrial IoT", "Energy Efficiency"],
+      "specialization": "Provides edge computing solutions for industrial IoT, optimizing data processing and reducing energy consumption.",
+      "initial_bid_range": [85000, 190000],
+      "reduction_strategy": "percentage",
+      "min_bid": 70000
+    },
+    {
+      "id": "020",
+      "name": "Quantum Optimization Systems",
+      "categories": ["AI and Machine Learning", "Energy Efficiency"],
+      "specialization": "Utilizes quantum computing algorithms for complex industrial optimization problems, significantly improving efficiency.",
+      "initial_bid_range": [200000, 450000],
+      "reduction_strategy": "fixed",
+      "min_bid": 180000
+    },
+    {
+        "id": "021",
+        "name": "NanoTech Coatings",
+        "categories": ["Nanomaterials", "Energy Efficiency"],
+        "specialization": "Develops advanced nanocoatings for industrial equipment, enhancing durability and energy efficiency.",
+        "initial_bid_range": [75000, 180000],
+        "reduction_strategy": "percentage",
+        "min_bid": 65000
+      },
+      {
+        "id": "022",
+        "name": "BioFab Innovations",
+        "categories": ["Biofabrication", "Sustainable Packaging"],
+        "specialization": "Creates biodegradable packaging and materials using advanced biofabrication techniques.",
+        "initial_bid_range": [90000, 210000],
+        "reduction_strategy": "random",
+        "min_bid": 80000
+      },
+      {
+        "id": "023",
+        "name": "GreenChem Solutions",
+        "categories": ["Green Chemistry", "Waste Reduction"],
+        "specialization": "Implements green chemistry principles in industrial processes, reducing harmful byproducts and waste.",
+        "initial_bid_range": [110000, 260000],
+        "reduction_strategy": "fixed",
+        "min_bid": 95000
+      },
+      {
+        "id": "024",
+        "name": "SmartGrid Integrators",
+        "categories": ["Smart Grid", "Renewable Energy Integration"],
+        "specialization": "Develops smart grid solutions for factories, optimizing energy use and integrating renewable sources.",
+        "initial_bid_range": [130000, 300000],
+        "reduction_strategy": "percentage",
+        "min_bid": 115000
+      },
+      {
+        "id": "025",
+        "name": "Industrial Symbiosis Network",
+        "categories": ["Industrial Symbiosis", "Circular Economy"],
+        "specialization": "Creates networks for resource sharing between industries, turning waste from one process into raw materials for another.",
+        "initial_bid_range": [95000, 220000],
+        "reduction_strategy": "random",
+        "min_bid": 85000
+      },
+      {
+        "id": "026",
+        "name": "AR Training Systems",
+        "categories": ["Augmented Reality", "Smart Manufacturing"],
+        "specialization": "Develops augmented reality training programs for complex manufacturing processes, improving worker efficiency and safety.",
+        "initial_bid_range": [70000, 160000],
+        "reduction_strategy": "fixed",
+        "min_bid": 60000
+      },
+      {
+        "id": "027",
+        "name": "Micro-Robotics Automation",
+        "categories": ["Robotics and Automation", "Nanomaterials"],
+        "specialization": "Creates micro-robotic systems for precise manufacturing and quality control in nanotechnology industries.",
+        "initial_bid_range": [150000, 350000],
+        "reduction_strategy": "percentage",
+        "min_bid": 130000
+      },
+      {
+        "id": "028",
+        "name": "Blockchain Supply Assurance",
+        "categories": ["Blockchain", "Sustainable Supply Chain"],
+        "specialization": "Implements blockchain solutions for end-to-end supply chain transparency and sustainability verification.",
+        "initial_bid_range": [100000, 230000],
+        "reduction_strategy": "random",
+        "min_bid": 90000
+      },
+      {
+        "id": "029",
+        "name": "Eco-Packaging Designers",
+        "categories": ["Sustainable Packaging", "Circular Economy"],
+        "specialization": "Designs innovative, eco-friendly packaging solutions that are fully recyclable or biodegradable.",
+        "initial_bid_range": [60000, 140000],
+        "reduction_strategy": "fixed",
+        "min_bid": 50000
+      },
+      {
+        "id": "030",
+        "name": "Smart Water Systems",
+        "categories": ["Water Management", "Industrial IoT"],
+        "specialization": "Develops IoT-based water management systems for industrial processes, optimizing usage and treatment.",
+        "initial_bid_range": [85000, 200000],
+        "reduction_strategy": "percentage",
+        "min_bid": 75000
+      },
+      {
+        "id": "031",
+        "name": "AI-Powered Quality Control",
+        "categories": ["AI and Machine Learning", "Smart Manufacturing"],
+        "specialization": "Implements advanced AI systems for real-time quality control in manufacturing processes.",
+        "initial_bid_range": [110000, 260000],
+        "reduction_strategy": "random",
+        "min_bid": 95000
+      },
+      {
+        "id": "032",
+        "name": "Drone Inspection Services",
+        "categories": ["Robotics and Automation", "Predictive Maintenance"],
+        "specialization": "Utilizes autonomous drones for industrial inspections and predictive maintenance in hard-to-reach areas.",
+        "initial_bid_range": [70000, 160000],
+        "reduction_strategy": "fixed",
+        "min_bid": 60000
+      },
+      {
+        "id": "033",
+        "name": "Quantum Sensors",
+        "categories": ["Industrial IoT", "Energy Efficiency"],
+        "specialization": "Develops quantum-based sensors for ultra-precise measurements in industrial processes, improving efficiency and reducing waste.",
+        "initial_bid_range": [180000, 400000],
+        "reduction_strategy": "percentage",
+        "min_bid": 160000
+      },
+      {
+        "id": "034",
+        "name": "Biometric Security Systems",
+        "categories": ["Cybersecurity", "Smart Manufacturing"],
+        "specialization": "Implements advanced biometric security systems for restricted areas in smart factories.",
+        "initial_bid_range": [90000, 210000],
+        "reduction_strategy": "random",
+        "min_bid": 80000
+      },
+      {
+        "id": "035",
+        "name": "Sustainable 3D Printing",
+        "categories": ["Additive Manufacturing", "Circular Economy"],
+        "specialization": "Offers 3D printing services using recycled materials and designs optimized for circular economy principles.",
+        "initial_bid_range": [75000, 170000],
+        "reduction_strategy": "fixed",
+        "min_bid": 65000
+      },
+      {
+        "id": "036",
+        "name": "Edge AI Solutions",
+        "categories": ["AI and Machine Learning", "Industrial IoT"],
+        "specialization": "Develops edge computing AI solutions for real-time data processing and decision-making in industrial environments.",
+        "initial_bid_range": [120000, 280000],
+        "reduction_strategy": "percentage",
+        "min_bid": 105000
+      },
+      {
+        "id": "037",
+        "name": "Virtual Plant Simulation",
+        "categories": ["Digital Twin", "Smart Manufacturing"],
+        "specialization": "Creates comprehensive digital twin simulations of entire manufacturing plants for optimization and training.",
+        "initial_bid_range": [150000, 350000],
+        "reduction_strategy": "random",
+        "min_bid": 130000
+      },
+      {
+        "id": "038",
+        "name": "Green Cloud Computing",
+        "categories": ["Cloud Computing", "Energy Efficiency"],
+        "specialization": "Provides energy-efficient cloud computing solutions optimized for industrial applications.",
+        "initial_bid_range": [100000, 230000],
+        "reduction_strategy": "fixed",
+        "min_bid": 85000
+      },
+      {
+        "id": "039",
+        "name": "Smart Dust Networks",
+        "categories": ["Industrial IoT", "Nanomaterials"],
+        "specialization": "Develops microscopic sensor networks for pervasive monitoring in industrial environments.",
+        "initial_bid_range": [200000, 450000],
+        "reduction_strategy": "percentage",
+        "min_bid": 180000
+      },
+      {
+        "id": "040",
+        "name": "Holographic Interface Systems",
+        "categories": ["Augmented Reality", "Smart Manufacturing"],
+        "specialization": "Creates holographic interfaces for intuitive control and monitoring of manufacturing processes.",
+        "initial_bid_range": [130000, 300000],
+        "reduction_strategy": "random",
+        "min_bid": 115000
+      },
+      {
+        "id": "041",
+        "name": "Bioengineered Materials",
+        "categories": ["Biofabrication", "Sustainable Packaging"],
+        "specialization": "Develops bioengineered materials for sustainable packaging and product components.",
+        "initial_bid_range": [110000, 260000],
+        "reduction_strategy": "fixed",
+        "min_bid": 95000
+      },
+      {
+        "id": "042",
+        "name": "Plasma Waste Processing",
+        "categories": ["Waste Reduction", "Energy Efficiency"],
+        "specialization": "Utilizes plasma technology for efficient and clean processing of industrial waste.",
+        "initial_bid_range": [180000, 400000],
+        "reduction_strategy": "percentage",
+        "min_bid": 160000
+      },
+      {
+        "id": "043",
+        "name": "Swarm Robotics Manufacturing",
+        "categories": ["Robotics and Automation", "Smart Manufacturing"],
+        "specialization": "Implements swarm robotics for flexible and efficient manufacturing processes.",
+        "initial_bid_range": [160000, 380000],
+        "reduction_strategy": "random",
+        "min_bid": 140000
+      },
+      {
+        "id": "044",
+        "name": "Predictive Supply Chain",
+        "categories": ["AI and Machine Learning", "Sustainable Supply Chain"],
+        "specialization": "Uses AI for predictive analytics in supply chain management, reducing waste and improving efficiency.",
+        "initial_bid_range": [90000, 210000],
+        "reduction_strategy": "fixed",
+        "min_bid": 80000
+      },
+      {
+        "id": "045",
+        "name": "Magnetic Refrigeration Systems",
+        "categories": ["Energy Efficiency", "Smart Manufacturing"],
+        "specialization": "Develops energy-efficient magnetic refrigeration systems for industrial cooling applications.",
+        "initial_bid_range": [140000, 320000],
+        "reduction_strategy": "percentage",
+        "min_bid": 125000
+      },
+      {
+        "id": "046",
+        "name": "Self-Healing Materials",
+        "categories": ["Nanomaterials", "Predictive Maintenance"],
+        "specialization": "Creates self-repairing materials for industrial equipment, reducing maintenance needs and extending lifespan.",
+        "initial_bid_range": [120000, 280000],
+        "reduction_strategy": "random",
+        "min_bid": 105000
+      },
+      {
+        "id": "047",
+        "name": "Industrial Photosynthesis",
+        "categories": ["Green Chemistry", "Emissions Control"],
+        "specialization": "Develops artificial photosynthesis systems to capture and convert CO2 emissions into useful products.",
+        "initial_bid_range": [170000, 390000],
+        "reduction_strategy": "fixed",
+        "min_bid": 150000
+      },
+      {
+        "id": "048",
+        "name": "Quantum Encryption",
+        "categories": ["Cybersecurity", "Industrial IoT"],
+        "specialization": "Implements quantum encryption technologies for ultra-secure industrial communication networks.",
+        "initial_bid_range": [200000, 450000],
+        "reduction_strategy": "percentage",
+        "min_bid": 180000
+      },
+      {
+        "id": "049",
+        "name": "Piezoelectric Energy Harvesters",
+        "categories": ["Energy Efficiency", "Industrial IoT"],
+        "specialization": "Develops systems to harvest energy from vibrations in industrial environments, powering IoT devices.",
+        "initial_bid_range": [80000, 180000],
+        "reduction_strategy": "random",
+        "min_bid": 70000
+      },
+      {
+        "id": "050",
+        "name": "Fog Computing for Industry",
+        "categories": ["Cloud Computing", "Industrial IoT"],
+        "specialization": "Implements fog computing solutions for efficient data processing and reduced latency in industrial IoT applications.",
+        "initial_bid_range": [110000, 260000],
+        "reduction_strategy": "fixed",
+        "min_bid": 95000
+      },
+      {
+        "id": "051",
+        "name": "Biomimetic Process Optimization",
+        "categories": ["AI and Machine Learning", "Energy Efficiency"],
+        "specialization": "Uses AI algorithms inspired by biological processes to optimize industrial operations for maximum efficiency.",
+        "initial_bid_range": [130000, 300000],
+        "reduction_strategy": "percentage",
+        "min_bid": 115000
+      },
+      {
+        "id": "052",
+        "name": "Hyperspectral Imaging QC",
+        "categories": ["AI and Machine Learning", "Smart Manufacturing"],
+        "specialization": "Utilizes hyperspectral imaging and AI for advanced quality control in manufacturing processes.",
+        "initial_bid_range": [100000, 230000],
+        "reduction_strategy": "random",
+        "min_bid": 90000
+      },
+      {
+        "id": "053",
+        "name": "Graphene Enhancement Tech",
+        "categories": ["Nanomaterials", "Energy Efficiency"],
+        "specialization": "Develops graphene-based solutions to enhance the performance and efficiency of industrial materials and processes.",
+        "initial_bid_range": [150000, 350000],
+        "reduction_strategy": "fixed",
+        "min_bid": 135000
+      },
+      {
+        "id": "054",
+        "name": "Cognitive Digital Twin",
+        "categories": ["Digital Twin", "Cognitive Computing"],
+        "specialization": "Creates advanced digital twins with cognitive capabilities for complex system modeling and predictive analysis.",
+        "initial_bid_range": [180000, 400000],
+        "reduction_strategy": "percentage",
+        "min_bid": 160000
+      },
+      {
+        "id": "055",
+        "name": "5G Industrial Networks",
+        "categories": ["5G Industrial Networks", "Industrial IoT"],
+        "specialization": "Implements high-speed, low-latency 5G networks for advanced industrial communication and control.",
+        "initial_bid_range": [200000, 450000],
+        "reduction_strategy": "random",
+        "min_bid": 180000
+      },
+      {
+        "id": "056",
+        "name": "Cobot Collaboration Systems",
+        "categories": ["Human-Robot Collaboration", "Smart Manufacturing"],
+        "specialization": "Develops advanced collaborative robot systems for safe and efficient human-robot interaction in manufacturing.",
+        "initial_bid_range": [120000, 280000],
+        "reduction_strategy": "fixed",
+        "min_bid": 105000
+      },
+      {
+        "id": "057",
+        "name": "Green Logistics Optimization",
+        "categories": ["Sustainable Logistics", "AI and Machine Learning"],
+        "specialization": "Uses AI to optimize logistics operations for sustainability, reducing emissions and improving efficiency.",
+        "initial_bid_range": [90000, 210000],
+        "reduction_strategy": "percentage",
+        "min_bid": 80000
+      },
+      {
+        "id": "058",
+        "name": "Metamaterials Manufacturing",
+        "categories": ["Advanced Materials", "Smart Manufacturing"],
+        "specialization": "Develops and manufactures metamaterials with unique properties for various industrial applications.",
+        "initial_bid_range": [170000, 390000],
+        "reduction_strategy": "random",
+        "min_bid": 150000
+      },
+      {
+        "id": "059",
+        "name": "Industrial Neuromorphic Computing",
+        "categories": ["AI and Machine Learning", "Energy Efficiency"],
+        "specialization": "Implements neuromorphic computing systems for energy-efficient AI processing in industrial applications.",
+        "initial_bid_range": [160000, 370000],
+        "reduction_strategy": "fixed",
+        "min_bid": 140000
+      },
+      {
+        "id": "060",
+        "name": "Sustainable Additive Manufacturing",
+        "categories": ["Additive Manufacturing", "Circular Economy"],
+        "specialization": "Provides advanced 3D printing services using recycled and sustainable materials for industrial production.",
+        "initial_bid_range": [110000, 260000],
+        "reduction_strategy": "percentage",
+        "min_bid": 95000
+      },
+      {
+        "id": "061",
+        "name": "Quantum Sensing for Industry",
+        "categories": ["Industrial IoT", "Advanced Materials"],
+        "specialization": "Develops quantum sensors for ultra-precise measurements in various industrial processes.",
+        "initial_bid_range": [190000, 430000],
+        "reduction_strategy": "random",
+        "min_bid": 170000
+      },
+      {
+        "id": "062",
+        "name": "Bio-inspired Robotics",
+        "categories": ["Robotics and Automation", "Biofabrication"],
+        "specialization": "Creates bio-inspired robotic systems for adaptive and efficient industrial operations.",
+        "initial_bid_range": [140000, 320000],
+        "reduction_strategy": "fixed",
+        "min_bid": 125000
+      },
+      {
+        "id": "063",
+        "name": "Industrial AR Interfaces",
+        "categories": ["Augmented Reality", "Human-Robot Collaboration"],
+        "specialization": "Develops augmented reality interfaces for enhanced human-machine interaction in industrial settings.",
+        "initial_bid_range": [100000, 230000],
+        "reduction_strategy": "percentage",
+        "min_bid": 90000
+      },
+      {
+        "id": "064",
+        "name": "Smart Microgrids",
+        "categories": ["Smart Grid", "Renewable Energy Integration"],
+        "specialization": "Implements intelligent microgrid systems for efficient energy management and renewable integration in industrial facilities.",
+        "initial_bid_range": [180000, 410000],
+        "reduction_strategy": "random",
+        "min_bid": 160000
+      },
+      {
+        "id": "065",
+        "name": "Industrial Blockchain Security",
+        "categories": ["Blockchain", "Cybersecurity"],
+        "specialization": "Provides blockchain-based security solutions for industrial data and transactions.",
+        "initial_bid_range": [130000, 300000],
+        "reduction_strategy": "fixed",
+        "min_bid": 115000
+      },
+      {
+        "id": "066",
+        "name": "Eco-friendly Nanomaterials",
+        "categories": ["Nanomaterials", "Green Chemistry"],
+        "specialization": "Develops sustainable nanomaterials for various industrial applications with minimal environmental impact.",
+        "initial_bid_range": [150000, 350000],
+        "reduction_strategy": "percentage",
+        "min_bid": 135000
+      },
+      {
+        "id": "067",
+        "name": "Cognitive Predictive Maintenance",
+        "categories": ["Predictive Maintenance", "Cognitive Computing"],
+        "specialization": "Uses advanced cognitive computing for highly accurate predictive maintenance in complex industrial systems.",
+        "initial_bid_range": [170000, 390000],
+        "reduction_strategy": "random",
+        "min_bid": 150000
+      },
+      {
+        "id": "068",
+        "name": "Industrial Symbiosis Platform",
+        "categories": ["Industrial Symbiosis", "Sustainable Supply Chain"],
+        "specialization": "Creates digital platforms to facilitate resource sharing and waste reduction among industries.",
+        "initial_bid_range": [120000, 280000],
+        "reduction_strategy": "fixed",
+        "min_bid": 105000
+      },
+      {
+        "id": "069",
+        "name": "Adaptive Manufacturing Systems",
+        "categories": ["Smart Manufacturing", "AI and Machine Learning"],
+        "specialization": "Develops AI-driven manufacturing systems that adapt in real-time to changing production requirements.",
+        "initial_bid_range": [200000, 450000],
+        "reduction_strategy": "percentage",
+        "min_bid": 180000
+      },
+      {
+        "id": "070",
+        "name": "Sustainable Packaging Design",
+        "categories": ["Sustainable Packaging", "Circular Economy"],
+        "specialization": "Creates innovative, eco-friendly packaging solutions using advanced materials and design principles.",
+        "initial_bid_range": [80000, 190000],
+        "reduction_strategy": "random",
+        "min_bid": 70000
+      },
+      {
+        "id": "071",
+        "name": "Industrial Computer Vision",
+        "categories": ["AI and Machine Learning", "Smart Manufacturing"],
+        "specialization": "Implements advanced computer vision systems for quality control and process monitoring in manufacturing.",
+        "initial_bid_range": [140000, 320000],
+        "reduction_strategy": "fixed",
+        "min_bid": 125000
+      },
+      {
+        "id": "072",
+        "name": "Sustainable Heat Recovery",
+        "categories": ["Energy Efficiency", "Waste Reduction"],
+        "specialization": "Develops systems for efficient heat recovery and reuse in industrial processes.",
+        "initial_bid_range": [110000, 260000],
+        "reduction_strategy": "percentage",
+        "min_bid": 95000
+      },
+      {
+        "id": "073",
+        "name": "Smart Dust Monitoring",
+        "categories": ["Industrial IoT", "Emissions Control"],
+        "specialization": "Creates networks of microscopic sensors for comprehensive environmental monitoring in industrial settings.",
+        "initial_bid_range": [160000, 370000],
+        "reduction_strategy": "random",
+        "min_bid": 140000
+      },
+      {
+        "id": "074",
+        "name": "Biocatalyst Innovations",
+        "categories": ["Green Chemistry", "Biofabrication"],
+        "specialization": "Develops biocatalysts for more efficient and environmentally friendly chemical processes in industry.",
+        "initial_bid_range": [130000, 300000],
+        "reduction_strategy": "fixed",
+        "min_bid": 115000
+      },
+      {
+        "id": "075",
+        "name": "Digital Supply Twin",
+        "categories": ["Digital Twin", "Sustainable Supply Chain"],
+        "specialization": "Creates comprehensive digital twin models of entire supply chains for optimization and risk management.",
+        "initial_bid_range": [180000, 410000],
+        "reduction_strategy": "percentage",
+        "min_bid": 160000
+      },
+      {
+        "id": "076",
+        "name": "Fog Computing for IIoT",
+        "categories": ["Industrial IoT", "Cloud Computing"],
+        "specialization": "Implements fog computing solutions for efficient data processing at the edge in industrial IoT applications.",
+        "initial_bid_range": [150000, 350000],
+        "reduction_strategy": "random",
+        "min_bid": 135000
+      },
+      {
+        "id": "077",
+        "name": "Robotic Process Automation",
+        "categories": ["Robotics and Automation", "AI and Machine Learning"],
+        "specialization": "Develops advanced RPA solutions for automating complex industrial processes and workflows.",
+        "initial_bid_range": [120000, 280000],
+        "reduction_strategy": "fixed",
+        "min_bid": 105000
+      },
+      {
+        "id": "078",
+        "name": "Sustainable Water Treatment",
+        "categories": ["Water Management", "Green Chemistry"],
+        "specialization": "Creates innovative, energy-efficient water treatment and recycling systems for industrial use.",
+        "initial_bid_range": [140000, 320000],
+        "reduction_strategy": "percentage",
+        "min_bid": 125000
+      },
+      {
+        "id": "079",
+        "name": "Industrial Cyber-Physical Security",
+        "categories": ["Cybersecurity", "Industrial IoT"],
+        "specialization": "Provides comprehensive security solutions for cyber-physical systems in industrial environments.",
+        "initial_bid_range": [170000, 390000],
+        "reduction_strategy": "random",
+        "min_bid": 150000
+      },
+      {
+        "id": "080",
+        "name": "Biomimetic Process Design",
+        "categories": ["Green Chemistry", "Smart Manufacturing"],
+        "specialization": "Designs industrial processes inspired by natural biological systems for enhanced efficiency and sustainability.",
+        "initial_bid_range": [160000, 370000],
+        "reduction_strategy": "fixed",
+        "min_bid": 140000
+      },
+      {
+        "id": "081",
+        "name": "Quantum-Inspired Optimization",
+        "categories": ["AI and Machine Learning", "Energy Efficiency"],
+        "specialization": "Applies quantum-inspired algorithms to solve complex optimization problems in industrial processes.",
+        "initial_bid_range": [190000, 430000],
+        "reduction_strategy": "percentage",
+        "min_bid": 170000
+      },
+      {
+        "id": "082",
+        "name": "Sustainable Cooling Solutions",
+        "categories": ["Energy Efficiency", "Smart Manufacturing"],
+        "specialization": "Develops energy-efficient and environmentally friendly cooling systems for industrial applications.",
+        "initial_bid_range": [130000, 300000],
+        "reduction_strategy": "random",
+        "min_bid": 115000
+      },
+      {
+        "id": "083",
+        "name": "Smart Contract Supply Chain",
+        "categories": ["Blockchain", "Sustainable Supply Chain"],
+        "specialization": "Implements blockchain-based smart contracts for transparent and efficient supply chain management.",
+        "initial_bid_range": [110000, 260000],
+        "reduction_strategy": "fixed",
+        "min_bid": 95000
+      },
+      {
+        "id": "084",
+        "name": "Industrial Exoskeletons",
+        "categories": ["Human-Robot Collaboration", "Smart Manufacturing"],
+        "specialization": "Develops powered exoskeletons to enhance worker capabilities and safety in industrial environments.",
+        "initial_bid_range": [180000, 410000],
+        "reduction_strategy": "percentage",
+        "min_bid": 160000
+      },
+      {
+        "id": "085",
+        "name": "Plasma Waste Processing",
+        "categories": ["Waste Reduction", "Green Chemistry"],
+        "specialization": "Uses plasma technology for efficient and clean processing of industrial waste and byproducts.",
+        "initial_bid_range": [200000, 450000],
+        "reduction_strategy": "random",
+        "min_bid": 180000
+      },
+      {
+        "id": "086",
+        "name": "Edge AI for IIoT",
+        "categories": ["Industrial IoT", "AI and Machine Learning"],
+        "specialization": "Implements edge computing AI solutions for real-time data processing in industrial IoT applications.",
+        "initial_bid_range": [150000, 350000],
+        "reduction_strategy": "fixed",
+        "min_bid": 135000
+      },
+      {
+        "id": "087",
+        "name": "Sustainable Lubricants",
+        "categories": ["Green Chemistry", "Energy Efficiency"],
+        "specialization": "Develops eco-friendly, high-performance lubricants for industrial machinery and processes.",
+        "initial_bid_range": [90000, 210000],
+        "reduction_strategy": "percentage",
+        "min_bid": 80000
+      },
+      {
+        "id": "088",
+        "name": "Quantum Cryptography for Industry",
+        "categories": ["Quantum Technologies", "Cybersecurity"],
+        "specialization": "Implements quantum cryptography solutions for ultra-secure industrial communications and data protection.",
+        "initial_bid_range": [220000, 500000],
+        "reduction_strategy": "fixed",
+        "min_bid": 200000
+      },
+      {
+        "id": "089",
+        "name": "Virtual Reality Training Systems",
+        "categories": ["Industrial VR", "Smart Manufacturing"],
+        "specialization": "Develops immersive VR training programs for complex industrial processes and safety procedures.",
+        "initial_bid_range": [130000, 300000],
+        "reduction_strategy": "random",
+        "min_bid": 115000
+      },
+      {
+        "id": "090",
+        "name": "Acoustic Emissions Monitoring",
+        "categories": ["Acoustic Sensing", "Predictive Maintenance"],
+        "specialization": "Uses advanced acoustic sensing technology for early fault detection and predictive maintenance in industrial machinery.",
+        "initial_bid_range": [110000, 260000],
+        "reduction_strategy": "percentage",
+        "min_bid": 95000
+      },
+      {
+        "id": "091",
+        "name": "EMI Shielding Solutions",
+        "categories": ["Electromagnetic Shielding", "Industrial IoT"],
+        "specialization": "Provides innovative electromagnetic interference (EMI) shielding solutions for sensitive industrial equipment and IoT devices.",
+        "initial_bid_range": [80000, 190000],
+        "reduction_strategy": "fixed",
+        "min_bid": 70000
+      },
+      {
+        "id": "092",
+        "name": "Sustainable Mining Technologies",
+        "categories": ["Sustainable Mining", "Robotics and Automation"],
+        "specialization": "Develops eco-friendly mining technologies, including autonomous equipment and resource-efficient extraction methods.",
+        "initial_bid_range": [250000, 550000],
+        "reduction_strategy": "random",
+        "min_bid": 225000
+      },
+      {
+        "id": "093",
+        "name": "Industrial Photonics",
+        "categories": ["Advanced Materials", "Smart Manufacturing"],
+        "specialization": "Implements photonic technologies for high-precision manufacturing and quality control processes.",
+        "initial_bid_range": [180000, 410000],
+        "reduction_strategy": "percentage",
+        "min_bid": 160000
+      },
+      {
+        "id": "094",
+        "name": "Biodegradable Electronics",
+        "categories": ["Sustainable Packaging", "Industrial IoT"],
+        "specialization": "Develops biodegradable electronic components for eco-friendly IoT devices and disposable sensors.",
+        "initial_bid_range": [140000, 320000],
+        "reduction_strategy": "fixed",
+        "min_bid": 125000
+      },
+      {
+        "id": "095",
+        "name": "AI-Powered Energy Trading",
+        "categories": ["AI and Machine Learning", "Smart Grid"],
+        "specialization": "Creates AI systems for optimizing energy trading and consumption in industrial microgrids.",
+        "initial_bid_range": [160000, 370000],
+        "reduction_strategy": "random",
+        "min_bid": 140000
+      },
+      {
+        "id": "096",
+        "name": "Robotic Recycling Systems",
+        "categories": ["Robotics and Automation", "Waste Reduction"],
+        "specialization": "Designs advanced robotic systems for efficient sorting and recycling of industrial waste materials.",
+        "initial_bid_range": [190000, 430000],
+        "reduction_strategy": "percentage",
+        "min_bid": 170000
+      },
+      {
+        "id": "097",
+        "name": "Hyperspectral Process Control",
+        "categories": ["Smart Manufacturing", "Big Data Analytics"],
+        "specialization": "Utilizes hyperspectral imaging and analytics for real-time process control and quality assurance in manufacturing.",
+        "initial_bid_range": [170000, 390000],
+        "reduction_strategy": "fixed",
+        "min_bid": 150000
+      },
+      {
+        "id": "098",
+        "name": "Molecular Manufacturing",
+        "categories": ["Nanotechnology", "Advanced Materials"],
+        "specialization": "Develops molecular-scale manufacturing techniques for producing advanced materials and components.",
+        "initial_bid_range": [300000, 650000],
+        "reduction_strategy": "random",
+        "min_bid": 275000
+      },
+      {
+        "id": "099",
+        "name": "Industrial Triboelectric Systems",
+        "categories": ["Energy Efficiency", "Industrial IoT"],
+        "specialization": "Creates triboelectric energy harvesting systems to power IoT devices in industrial environments.",
+        "initial_bid_range": [120000, 280000],
+        "reduction_strategy": "percentage",
+        "min_bid": 105000
+      },
+      {
+        "id": "100",
+        "name": "Cognitive Ergonomics",
+        "categories": ["Human-Robot Collaboration", "AI and Machine Learning"],
+        "specialization": "Develops AI-driven systems to optimize human-machine interfaces and workplace ergonomics in smart factories.",
+        "initial_bid_range": [130000, 300000],
+        "reduction_strategy": "fixed",
+        "min_bid": 115000
+      },
+      {
+        "id": "101",
+        "name": "Sustainable Cryogenics",
+        "categories": ["Energy Efficiency", "Advanced Materials"],
+        "specialization": "Provides energy-efficient cryogenic solutions for industrial processes and material preservation.",
+        "initial_bid_range": [200000, 450000],
+        "reduction_strategy": "random",
+        "min_bid": 180000
+      },
+      {
+        "id": "102",
+        "name": "Swarm Intelligence for Manufacturing",
+        "categories": ["AI and Machine Learning", "Robotics and Automation"],
+        "specialization": "Implements swarm intelligence algorithms for coordinating large-scale robotic manufacturing systems.",
+        "initial_bid_range": [180000, 410000],
+        "reduction_strategy": "percentage",
+        "min_bid": 160000
+      },
+      {
+        "id": "103",
+        "name": "Industrial Metamaterials",
+        "categories": ["Advanced Materials", "Smart Manufacturing"],
+        "specialization": "Develops and applies metamaterials with unique properties for industrial applications and energy efficiency.",
+        "initial_bid_range": [250000, 550000],
+        "reduction_strategy": "fixed",
+        "min_bid": 225000
+      },
+      {
+        "id": "104",
+        "name": "Quantum Sensing for Precision Manufacturing",
+        "categories": ["Quantum Technologies", "Smart Manufacturing"],
+        "specialization": "Utilizes quantum sensors for ultra-precise measurements and quality control in manufacturing processes.",
+        "initial_bid_range": [280000, 600000],
+        "reduction_strategy": "random",
+        "min_bid": 250000
+      },
+      {
+        "id": "105",
+        "name": "Bioelectronic Interfaces",
+        "categories": ["Human-Robot Collaboration", "Biofabrication"],
+        "specialization": "Creates bioelectronic interfaces for enhanced human-machine interaction in industrial environments.",
+        "initial_bid_range": [210000, 480000],
+        "reduction_strategy": "percentage",
+        "min_bid": 190000
+      },
+      {
+        "id": "106",
+        "name": "Self-Healing Industrial Materials",
+        "categories": ["Advanced Materials", "Predictive Maintenance"],
+        "specialization": "Develops self-repairing materials for industrial equipment to reduce maintenance needs and extend lifespan.",
+        "initial_bid_range": [160000, 370000],
+        "reduction_strategy": "fixed",
+        "min_bid": 140000
+      },
+      {
+        "id": "107",
+        "name": "Holographic Process Monitoring",
+        "categories": ["Augmented Reality", "Smart Manufacturing"],
+        "specialization": "Implements holographic displays for immersive, real-time monitoring of complex industrial processes.",
+        "initial_bid_range": [190000, 430000],
+        "reduction_strategy": "random",
+        "min_bid": 170000
+      },
+      {
+        "id": "108",
+        "name": "Sustainable Plasma Processing",
+        "categories": ["Green Chemistry", "Advanced Materials"],
+        "specialization": "Uses plasma technology for energy-efficient material processing and surface treatments in manufacturing.",
+        "initial_bid_range": [220000, 500000],
+        "reduction_strategy": "percentage",
+        "min_bid": 200000
+      },
+      {
+        "id": "109",
+        "name": "Neuromorphic Process Control",
+        "categories": ["AI and Machine Learning", "Energy Efficiency"],
+        "specialization": "Applies neuromorphic computing for ultra-efficient process control and optimization in industrial systems.",
+        "initial_bid_range": [240000, 530000],
+        "reduction_strategy": "fixed",
+        "min_bid": 215000
+      },
+      {
+        "id": "110",
+        "name": "Adaptive Camouflage Materials",
+        "categories": ["Advanced Materials", "Smart Manufacturing"],
+        "specialization": "Develops smart materials with adaptive camouflage properties for specialized industrial and defense applications.",
+        "initial_bid_range": [270000, 580000],
+        "reduction_strategy": "random",
+        "min_bid": 240000
+      },
+      {
+        "id": "111",
+        "name": "Industrial Telepresence Robotics",
+        "categories": ["Robotics and Automation", "5G Industrial Networks"],
+        "specialization": "Creates advanced telepresence robots for remote operation and inspection in hazardous industrial environments.",
+        "initial_bid_range": [230000, 510000],
+        "reduction_strategy": "percentage",
+        "min_bid": 205000
+      },
+      {
+        "id": "112",
+        "name": "Quantum-Resistant Industrial Cybersecurity",
+        "categories": ["Cybersecurity", "Quantum Technologies"],
+        "specialization": "Develops quantum-resistant encryption and security protocols for future-proofing industrial data and communications.",
+        "initial_bid_range": [260000, 570000],
+        "reduction_strategy": "fixed",
+        "min_bid": 235000
+      },
+      {
+        "id": "113",
+        "name": "Bionic Enhancement for Industrial Workers",
+        "categories": ["Human-Robot Collaboration", "Advanced Materials"],
+        "specialization": "Creates bionic enhancements and wearable technologies to augment industrial workers' capabilities and safety.",
+        "initial_bid_range": [200000, 450000],
+        "reduction_strategy": "random",
+        "min_bid": 180000
+      },
+      {
+        "id": "114",
+        "name": "4D Printing for Adaptive Components",
+        "categories": ["Additive Manufacturing", "Smart Manufacturing"],
+        "specialization": "Develops 4D printing technologies for creating adaptive, self-assembling components in industrial applications.",
+        "initial_bid_range": [240000, 530000],
+        "reduction_strategy": "percentage",
+        "min_bid": 215000
+      },
+      {
+        "id": "115",
+        "name": "Industrial-Scale Graphene Production",
+        "categories": ["Advanced Materials", "Sustainable Manufacturing"],
+        "specialization": "Innovates methods for large-scale, sustainable production of graphene for various industrial applications.",
+        "initial_bid_range": [300000, 650000],
+        "reduction_strategy": "fixed",
+        "min_bid": 275000
+      },
+      {
+        "id": "116",
+        "name": "Magnetic Levitation Transport Systems",
+        "categories": ["Sustainable Logistics", "Energy Efficiency"],
+        "specialization": "Designs energy-efficient magnetic levitation systems for intra-facility material transport in large industrial complexes.",
+        "initial_bid_range": [280000, 600000],
+        "reduction_strategy": "random",
+        "min_bid": 250000
+      },
+      {
+        "id": "117",
+        "name": "Biomimetic Robotics for Harsh Environments",
+        "categories": ["Robotics and Automation", "Sustainable Mining"],
+        "specialization": "Creates nature-inspired robotic systems for operation in extreme industrial environments like deep mining or offshore platforms.",
+        "initial_bid_range": [260000, 570000],
+        "reduction_strategy": "percentage",
+        "min_bid": 235000
+      },
+      {
+        "id": "118",
+        "name": "Cognitive Digital Twins for Supply Chains",
+        "categories": ["Digital Twin", "AI and Machine Learning"],
+        "specialization": "Develops advanced digital twin systems with cognitive capabilities for comprehensive supply chain optimization and risk management.",
+        "initial_bid_range": [220000, 500000],
+        "reduction_strategy": "fixed",
+        "min_bid": 200000
+      },
+      {
+        "id": "119",
+        "name": "Zero-Gravity Manufacturing Solutions",
+        "categories": ["Advanced Manufacturing", "Space Technology"],
+        "specialization": "Pioneers manufacturing techniques and technologies for zero-gravity environments, applicable to space industry and specialized terrestrial processes.",
+        "initial_bid_range": [350000, 750000],
+        "reduction_strategy": "random",
+        "min_bid": 325000
+      },
+      {
+        "id": "120",
+        "name": "Industrial Fog Computing Platforms",
+        "categories": ["Fog Computing", "Industrial IoT"],
+        "specialization": "Develops fog computing solutions for decentralized, real-time data processing and decision-making in complex industrial environments.",
+        "initial_bid_range": [230000, 510000],
+        "reduction_strategy": "random",
+        "min_bid": 205000
+      },
+      {
+        "id": "121",
+        "name": "Quantum Dot Industrial Sensors",
+        "categories": ["Nanotechnology", "Industrial IoT"],
+        "specialization": "Develops highly sensitive and efficient quantum dot-based sensors for various industrial applications, enhancing detection capabilities and energy efficiency.",
+        "initial_bid_range": [240000, 530000],
+        "reduction_strategy": "percentage",
+        "min_bid": 215000
+      },
+      {
+        "id": "122",
+        "name": "Industrial Piezoelectric Energy Harvesting",
+        "categories": ["Piezoelectric Systems", "Energy Efficiency"],
+        "specialization": "Creates advanced piezoelectric systems to harvest energy from industrial vibrations, powering IoT devices and sensors.",
+        "initial_bid_range": [180000, 410000],
+        "reduction_strategy": "fixed",
+        "min_bid": 160000
+      },
+      {
+        "id": "123",
+        "name": "Thermoelectric Waste Heat Recovery",
+        "categories": ["Thermoelectric Technologies", "Energy Efficiency"],
+        "specialization": "Develops innovative thermoelectric solutions for converting industrial waste heat into usable electricity.",
+        "initial_bid_range": [220000, 500000],
+        "reduction_strategy": "random",
+        "min_bid": 200000
+      },
+      {
+        "id": "124",
+        "name": "Building-Integrated Photovoltaics",
+        "categories": ["Photovoltaic Integration", "Sustainable Manufacturing"],
+        "specialization": "Designs and implements advanced photovoltaic systems integrated directly into industrial building materials and structures.",
+        "initial_bid_range": [260000, 570000],
+        "reduction_strategy": "percentage",
+        "min_bid": 235000
+      },
+      {
+        "id": "125",
+        "name": "Biomimetic Surface Coatings",
+        "categories": ["Biomimicry", "Advanced Materials"],
+        "specialization": "Creates nature-inspired surface coatings for industrial applications, enhancing properties like self-cleaning, anti-fouling, and drag reduction.",
+        "initial_bid_range": [200000, 450000],
+        "reduction_strategy": "fixed",
+        "min_bid": 180000
+      },
+      {
+        "id": "126",
+        "name": "Artificial Photosynthesis for Carbon Capture",
+        "categories": ["Artificial Photosynthesis", "Emissions Control"],
+        "specialization": "Develops artificial photosynthesis systems for efficient carbon capture and conversion in industrial processes.",
+        "initial_bid_range": [300000, 650000],
+        "reduction_strategy": "random",
+        "min_bid": 275000
+      },
+      {
+        "id": "127",
+        "name": "Superconducting Power Systems",
+        "categories": ["Superconductivity", "Energy Efficiency"],
+        "specialization": "Implements superconducting technologies in industrial power systems for lossless energy transmission and improved efficiency.",
+        "initial_bid_range": [350000, 750000],
+        "reduction_strategy": "percentage",
+        "min_bid": 325000
+      },
+      {
+        "id": "128",
+        "name": "Molecular Robotics for Nanofabrication",
+        "categories": ["Molecular Robotics", "Nanotechnology"],
+        "specialization": "Pioneers the use of molecular robots for precise manipulation and assembly at the nanoscale in manufacturing processes.",
+        "initial_bid_range": [400000, 850000],
+        "reduction_strategy": "fixed",
+        "min_bid": 375000
+      }
+
+  ]
