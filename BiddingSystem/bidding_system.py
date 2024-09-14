@@ -1,8 +1,8 @@
-
+# BiddingSystem/bidding_system.py
 import random
 import json
 import time
-from typing import List, Dict, Tuple
+from typing import List, Tuple
 import hashlib
 
 class Agent:
@@ -109,13 +109,6 @@ class BiddingSystem:
 
         winner = min(self.bids, key=self.bids.get)
         winning_bid = self.bids[winner]
-        if winner.startswith("Coalition"):
-            print(f"\nWinner: Coalition {winner} with a bid of ${winning_bid}")
-        else:
-            winning_agent = next(agent for agent in self.agents if agent.id == winner)
-            print(f"\nWinner: {winning_agent.name} (ID: {winner}) with a bid of ${winning_bid}")
-            winning_agent.reputation += 0.1  # Increase reputation for winning
-
         return winner, winning_bid
 
     def print_bids(self):

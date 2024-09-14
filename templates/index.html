@@ -1,0 +1,78 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Bidding System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-2xl">
+        <h1 class="text-3xl font-bold mb-6 text-center text-blue-600">AI Bidding System</h1>
+        <form id="bidding-form" class="space-y-4">
+            <div>
+                <label for="query" class="block text-sm font-medium text-gray-700">Project Description</label>
+                <input type="text" id="query" name="query" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+            </div>
+            <div>
+                <label for="projectComplexity" class="block text-sm font-medium text-gray-700">Project Complexity (0.1 - 2.0)</label>
+                <input type="number" id="projectComplexity" name="projectComplexity" min="0.1" max="2.0" step="0.1" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+            </div>
+            <div>
+                <label for="requiredSpecializations" class="block text-sm font-medium text-gray-700">Required Specializations (comma-separated)</label>
+                <input type="text" id="requiredSpecializations" name="requiredSpecializations" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Run Simulation</button>
+        </form>
+        <div id="results" class="mt-8 hidden">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Simulation Results</h2>
+            <div id="winner-info" class="mb-4"></div>
+            <div id="vechain-info" class="mb-4"></div>
+            <pre id="vechain-log" class="bg-gray-100 p-4 rounded-lg overflow-x-auto text-sm"></pre>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('bidding-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('/run_simulation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const result = await response.json();
+                displayResults(result);
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            }
+        });
+
+        function displayResults(result) {
+            const resultsDiv = document.getElementById('results');
+            const winnerInfoDiv = document.getElementById('winner-info');
+            const vechainInfoDiv = document.getElementById('vechain-info');
+            const vechainLogPre = document.getElementById('vechain-log');
+
+            winnerInfoDiv.innerHTML = `<p class="font-semibold">Winner: ${result.winner}</p><p>Winning Bid: $${result.winningBid}</p>`;
+            vechainInfoDiv.innerHTML = `<p class="font-semibold">VeChain Hash:</p><p class="break-all">${result.vechainHash}</p>`;
+            vechainLogPre.textContent = JSON.stringify(result.vechainLog, null, 2);
+
+            resultsDiv.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
