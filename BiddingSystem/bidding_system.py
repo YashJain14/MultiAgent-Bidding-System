@@ -6,46 +6,47 @@ from typing import List, Tuple
 import hashlib
 
 class Agent:
-    def __init__(self, id: str, name: str, initial_bid_range: List[int], reduction_strategy: str, min_bid: int, specializations: List[str]):
+    def __init__(self, id: str, name: str, initial_bid_range: List[float], reduction_strategy: str, min_bid: float, specializations: List[str], bid_unit: str, specialization: str):
         self.id = id
         self.name = name
-        self.initial_bid_range = initial_bid_range
+        self.initial_bid_range = [float(x) for x in initial_bid_range]
         self.reduction_strategy = reduction_strategy
-        self.min_bid = min_bid
+        self.min_bid = float(min_bid)
         self.specializations = specializations
+        self.bid_unit = bid_unit
+        self.specialization = specialization
         self.current_bid = None
-        self.reputation = random.uniform(0.5, 1.0)  # Initial reputation score
+        self.reputation = random.uniform(0.5, 1.0)
 
-    def place_initial_bid(self, project_complexity: float):
-        base_bid = random.randint(self.initial_bid_range[0], self.initial_bid_range[1])
-        self.current_bid = int(base_bid * project_complexity * self.reputation)
+    def place_initial_bid(self, project_complexity: float) -> float:
+        base_bid = random.uniform(self.initial_bid_range[0], self.initial_bid_range[1])
+        self.current_bid = base_bid * project_complexity * self.reputation
         return self.current_bid
 
-    def place_bid(self, current_lowest_bid: int, round: int) -> Tuple[int, float]:
+    def place_bid(self, current_lowest_bid: float, round: int) -> Tuple[float, float]:
         if self.reduction_strategy == "percentage":
-            new_bid = max(int(self.current_bid * (0.98 - (round * 0.01))), self.min_bid)
+            new_bid = max(self.current_bid * (0.98 - (round * 0.01)), self.min_bid)
         elif self.reduction_strategy == "fixed":
-            new_bid = max(self.current_bid - (5000 + (round * 1000)), self.min_bid)
+            new_bid = max(self.current_bid - (self.current_bid * 0.05), self.min_bid)
         else:  # random
-            new_bid = max(random.randint(self.min_bid, self.current_bid - 1), self.min_bid)
+            new_bid = max(random.uniform(self.min_bid, self.current_bid), self.min_bid)
 
         if new_bid < current_lowest_bid:
             self.current_bid = new_bid
-            bid_time = time.time()  # Timestamp for the bid
+            bid_time = time.time()
             return new_bid, bid_time
         return None, None
-
 class Coalition:
     def __init__(self, agents: List[Agent]):
         self.agents = agents
         self.specializations = list(set([spec for agent in agents for spec in agent.specializations]))
         self.reputation = sum([agent.reputation for agent in agents]) / len(agents)
 
-    def place_bid(self, current_lowest_bid: int, round: int) -> Tuple[int, float]:
+    def place_bid(self, current_lowest_bid: float, round: int) -> Tuple[float, float]:
         individual_bids = [agent.place_bid(current_lowest_bid, round) for agent in self.agents]
         valid_bids = [bid for bid, _ in individual_bids if bid is not None]
         if valid_bids:
-            coalition_bid = int(sum(valid_bids) * 0.9)  # 10% discount for coalition
+            coalition_bid = sum(valid_bids) * 0.9  # 10% discount for coalition
             if coalition_bid < current_lowest_bid:
                 bid_time = time.time()
                 return coalition_bid, bid_time
@@ -114,12 +115,12 @@ class BiddingSystem:
     def print_bids(self):
         for agent_id, bid in self.bids.items():
             if agent_id.startswith("Coalition"):
-                print(f"{agent_id}: ${bid}")
+                print(f"{agent_id}: ${bid:.2f}")
             else:
                 agent = next(agent for agent in self.agents if agent.id == agent_id)
-                print(f"{agent.name} (ID: {agent_id}): ${bid}")
+                print(f"{agent.name} (ID: {agent_id}): ${bid:.2f} {agent.bid_unit}")
 
-    def log_bid(self, agent_id: str, bid: int, timestamp: float, round: int):
+    def log_bid(self, agent_id: str, bid: float, timestamp: float, round: int):
         log_entry = {
             "agent_id": agent_id,
             "bid": bid,

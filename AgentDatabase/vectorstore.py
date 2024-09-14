@@ -2,6 +2,7 @@ from langchain_community.document_loaders import JSONLoader
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
+
 def metadata_func(record: dict, metadata: dict) -> dict:
     metadata["source"] = " "
     metadata["id"] = str(record.get("id", ""))
@@ -11,7 +12,9 @@ def metadata_func(record: dict, metadata: dict) -> dict:
     metadata["initial_bid_range"] = str(record.get("initial_bid_range", []))
     metadata["reduction_strategy"] = str(record.get("reduction_strategy", ""))
     metadata["min_bid"] = str(record.get("min_bid", ""))
+    metadata["bid_unit"] = str(record.get("bid_unit", ""))
     
+
     # Remove any None values
     metadata = {k: v for k, v in metadata.items() if v is not None}
     

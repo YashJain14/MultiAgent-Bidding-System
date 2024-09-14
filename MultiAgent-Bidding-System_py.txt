@@ -1,6 +1,48 @@
-========== FILE: main.py ==========
+========== FILE: app.py ==========
 
+# app.py
+from flask import Flask, render_template, request, jsonify
+from BiddingSystem.query import create_agents_from_docs, run_bidding_simulation
+from langchain_community.vectorstores import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+import json
 
+app = Flask(__name__)
+
+# Set up vector store and retriever
+embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+vectorstore = Chroma(persist_directory="./AgentDatabase/chroma_db", embedding_function=embedding_function)
+retriever = vectorstore.as_retriever(search_kwargs={"k": 4})  # Retrieve 4 agents
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/run_simulation', methods=['POST'])
+def run_simulation():
+    data = request.json
+    query = data['query']
+    project_complexity = float(data['projectComplexity'])
+    required_specializations = data['requiredSpecializations'].split(',')
+
+    # Query for relevant agents
+    docs = retriever.get_relevant_documents(query)
+
+    # Create Agent objects from the retrieved documents
+    agents = create_agents_from_docs(docs)
+
+    # Run the bidding simulation
+    winner, winning_bid, vechain_log, vechain_hash = run_bidding_simulation(agents, project_complexity, required_specializations)
+
+    return jsonify({
+        'winner': winner,
+        'winningBid': winning_bid,
+        'vechainLog': json.loads(vechain_log),
+        'vechainHash': vechain_hash
+    })
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
  
 
@@ -48,12 +90,10 @@ print("Done")
 
 ========== FILE: BiddingSystem/query.py ==========
 
-# query_system.py
-
 from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 import json
-from bidding_system import Agent, run_bidding_simulation
+from BiddingSystem.bidding_system import Agent, run_bidding_simulation
 
 def create_agents_from_docs(docs):
     agents = []
@@ -69,31 +109,6 @@ def create_agents_from_docs(docs):
         )
         agents.append(agent)
     return agents
-
-# Set up vector store and retriever
-embedding_function = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-vectorstore = Chroma(persist_directory="./AgentDatabase/chroma_db", embedding_function=embedding_function)
-retriever = vectorstore.as_retriever(search_kwargs={"k": 4})  # Retrieve 4 agents
-
-# Query for relevant agents
-query = "upgrade my industry with ai"
-docs = retriever.get_relevant_documents(query)
-
-# Create Agent objects from the retrieved documents
-agents = create_agents_from_docs(docs)
-
-# Set up bidding parameters
-project_complexity = 1.2
-required_specializations = ["Green Chemistry", "Smart Manufacturing", "Robotics and Automation", "AI and Machine Learning"]
-
-# Run the bidding simulation
-winner, winning_bid, vechain_log, vechain_hash = run_bidding_simulation(agents, project_complexity, required_specializations)
-
-# Print results
-print(f"\nSimulation complete. Winner: {winner} with bid: ${winning_bid}")
-print(f"VeChain Log Hash: {vechain_hash}")
-print("\nVeChain Log:")
-print(json.dumps(json.loads(vechain_log), indent=2))
 
  
 
@@ -131,11 +146,11 @@ class Agent:
 
 ========== FILE: BiddingSystem/bidding_system.py ==========
 
-
+# BiddingSystem/bidding_system.py
 import random
 import json
 import time
-from typing import List, Dict, Tuple
+from typing import List, Tuple
 import hashlib
 
 class Agent:
@@ -242,13 +257,6 @@ class BiddingSystem:
 
         winner = min(self.bids, key=self.bids.get)
         winning_bid = self.bids[winner]
-        if winner.startswith("Coalition"):
-            print(f"\nWinner: Coalition {winner} with a bid of ${winning_bid}")
-        else:
-            winning_agent = next(agent for agent in self.agents if agent.id == winner)
-            print(f"\nWinner: {winning_agent.name} (ID: {winner}) with a bid of ${winning_bid}")
-            winning_agent.reputation += 0.1  # Increase reputation for winning
-
         return winner, winning_bid
 
     def print_bids(self):
