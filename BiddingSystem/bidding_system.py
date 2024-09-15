@@ -1,4 +1,3 @@
-# BiddingSystem/bidding_system.py
 import random
 import json
 import time
@@ -17,13 +16,16 @@ class Agent:
         self.specialization = specialization
         self.current_bid = None
         self.reputation = random.uniform(0.5, 1.0)
+        self.b3tr_tokens = 0
+        self.round_tokens = 0  # Tokens earned in the current round
 
     def place_initial_bid(self, project_complexity: float) -> float:
         base_bid = random.uniform(self.initial_bid_range[0], self.initial_bid_range[1])
         self.current_bid = base_bid * project_complexity * self.reputation
         return self.current_bid
 
-    def place_bid(self, current_lowest_bid: float, round: int) -> Tuple[float, float]:
+    def place_bid(self, current_lowest_bid: float, round: int) -> Tuple[float, float, float]:
+        old_bid = self.current_bid
         if self.reduction_strategy == "percentage":
             new_bid = max(self.current_bid * (0.98 - (round * 0.01)), self.min_bid)
         elif self.reduction_strategy == "fixed":
@@ -34,23 +36,47 @@ class Agent:
         if new_bid < current_lowest_bid:
             self.current_bid = new_bid
             bid_time = time.time()
-            return new_bid, bid_time
-        return None, None
+            reduction = old_bid - new_bid
+            return new_bid, bid_time, reduction
+        return None, None, 0
+
+    def award_b3tr_tokens(self, amount: float):
+        self.b3tr_tokens += amount
+        self.round_tokens = amount
+
+    def reset_round_tokens(self):
+        self.round_tokens = 0
+
 class Coalition:
     def __init__(self, agents: List[Agent]):
         self.agents = agents
         self.specializations = list(set([spec for agent in agents for spec in agent.specializations]))
         self.reputation = sum([agent.reputation for agent in agents]) / len(agents)
+        self.b3tr_tokens = 0
+        self.round_tokens = 0  # Tokens earned in the current round
 
-    def place_bid(self, current_lowest_bid: float, round: int) -> Tuple[float, float]:
+    def place_bid(self, current_lowest_bid: float, round: int) -> Tuple[float, float, float]:
         individual_bids = [agent.place_bid(current_lowest_bid, round) for agent in self.agents]
-        valid_bids = [bid for bid, _ in individual_bids if bid is not None]
+        valid_bids = [bid for bid, _, _ in individual_bids if bid is not None]
         if valid_bids:
             coalition_bid = sum(valid_bids) * 0.9  # 10% discount for coalition
             if coalition_bid < current_lowest_bid:
                 bid_time = time.time()
-                return coalition_bid, bid_time
-        return None, None
+                reduction = sum([agent.current_bid for agent in self.agents]) - coalition_bid
+                return coalition_bid, bid_time, reduction
+        return None, None, 0
+
+    def award_b3tr_tokens(self, amount: float):
+        self.b3tr_tokens += amount
+        self.round_tokens = amount
+        per_agent_amount = amount / len(self.agents)
+        for agent in self.agents:
+            agent.award_b3tr_tokens(per_agent_amount)
+
+    def reset_round_tokens(self):
+        self.round_tokens = 0
+        for agent in self.agents:
+            agent.reset_round_tokens()
 
 class BiddingSystem:
     def __init__(self, agents: List[Agent], project_complexity: float, required_specializations: List[str]):
@@ -61,6 +87,8 @@ class BiddingSystem:
         self.bids = {}
         self.bid_logs = []
         self.coalitions = self.form_coalitions()
+        self.b3tr_pool = 1000
+        self.reduction_reward_pool = 500  # Tokens for rewarding price reductions
 
     def form_coalitions(self) -> List[Coalition]:
         coalitions = []
@@ -87,9 +115,11 @@ class BiddingSystem:
             print(f"\nRound {round}:")
             current_lowest_bid = min(self.bids.values())
             new_bids = {}
+            total_reduction = 0
 
             for agent in self.agents + self.coalitions:
-                new_bid, bid_time = agent.place_bid(current_lowest_bid, round)
+                new_bid, bid_time, reduction = agent.place_bid(current_lowest_bid, round)
+                total_reduction += reduction
                 if new_bid:
                     if isinstance(agent, Agent):
                         new_bids[agent.id] = new_bid
@@ -106,10 +136,13 @@ class BiddingSystem:
 
             self.bids = new_bids
             self.print_bids()
+            self.distribute_reduction_rewards(total_reduction)
+            self.print_round_tokens()
             self.log_round(round)
 
         winner = min(self.bids, key=self.bids.get)
         winning_bid = self.bids[winner]
+        self.distribute_b3tr_tokens(winner)
         return winner, winning_bid
 
     def print_bids(self):
@@ -136,6 +169,59 @@ class BiddingSystem:
         }
         self.bid_logs.append(log_entry)
 
+    def distribute_reduction_rewards(self, total_reduction):
+        if total_reduction == 0:
+            return
+
+        for agent in self.agents + self.coalitions:
+            if isinstance(agent, Agent):
+                agent_id = agent.id
+                old_bid = self.bids[agent_id]
+                new_bid, _, reduction = agent.place_bid(old_bid, 0)  # Just to get the reduction
+            else:  # Coalition
+                agent_id = f"Coalition_{'-'.join([a.id for a in agent.agents])}"
+                old_bid = self.bids[agent_id]
+                new_bid, _, reduction = agent.place_bid(old_bid, 0)  # Just to get the reduction
+
+            if reduction > 0:
+                reward = (reduction / total_reduction) * self.reduction_reward_pool
+                agent.award_b3tr_tokens(reward)
+
+    def print_round_tokens(self):
+        print("\nB3TR tokens awarded for price reductions in this round:")
+        for agent in self.agents + self.coalitions:
+            if isinstance(agent, Agent):
+                print(f"{agent.name} (ID: {agent.id}): {agent.round_tokens:.2f} B3TR tokens")
+            else:  # Coalition
+                coalition_id = f"Coalition_{'-'.join([a.id for a in agent.agents])}"
+                print(f"{coalition_id}: {agent.round_tokens:.2f} B3TR tokens")
+            agent.reset_round_tokens()
+
+    def distribute_b3tr_tokens(self, winner):
+        winner_tokens = self.b3tr_pool * 0.5
+        remaining_tokens = self.b3tr_pool * 0.5
+
+        if winner.startswith("Coalition"):
+            winner_coalition = next(c for c in self.coalitions if f"Coalition_{'-'.join([a.id for a in c.agents])}" == winner)
+            winner_coalition.award_b3tr_tokens(winner_tokens)
+        else:
+            winner_agent = next(a for a in self.agents if a.id == winner)
+            winner_agent.award_b3tr_tokens(winner_tokens)
+
+        non_winners = [agent for agent in self.agents + self.coalitions if (isinstance(agent, Agent) and agent.id != winner) or (isinstance(agent, Coalition) and f"Coalition_{'-'.join([a.id for a in agent.agents])}" != winner)]
+        tokens_per_participant = remaining_tokens / len(non_winners)
+        
+        for participant in non_winners:
+            participant.award_b3tr_tokens(tokens_per_participant)
+
+        print("\nFinal B3TR token distribution:")
+        for agent in self.agents + self.coalitions:
+            if isinstance(agent, Agent):
+                print(f"{agent.name} (ID: {agent.id}): {agent.b3tr_tokens:.2f} B3TR tokens")
+            else:  # Coalition
+                coalition_id = f"Coalition_{'-'.join([a.id for a in agent.agents])}"
+                print(f"{coalition_id}: {agent.b3tr_tokens:.2f} B3TR tokens")
+
     def generate_vechain_log(self):
         vechain_log = {
             "project_complexity": self.project_complexity,
@@ -144,6 +230,12 @@ class BiddingSystem:
             "final_result": {
                 "winner": min(self.bids, key=self.bids.get),
                 "winning_bid": min(self.bids.values())
+            },
+            "b3tr_distribution": {
+                "total_pool": self.b3tr_pool,
+                "reduction_reward_pool": self.reduction_reward_pool,
+                "agent_tokens": {agent.id: agent.b3tr_tokens for agent in self.agents},
+                "coalition_tokens": {f"Coalition_{'-'.join([a.id for a in coalition.agents])}": coalition.b3tr_tokens for coalition in self.coalitions}
             }
         }
         return json.dumps(vechain_log)
